@@ -1,8 +1,9 @@
-import React from 'react'
-import Layout from '../../components/Layout'
-import styles from '../../styles/projects.module.css'
 import { Link, graphql } from 'gatsby'
+
 import Img from "gatsby-image"
+import Layout from '../../components/Layout'
+import React from 'react'
+import styles from '../../styles/projects.module.css'
 
 const Projects = ({ data }) => {
   console.log(data)
@@ -16,7 +17,7 @@ const Projects = ({ data }) => {
         <h3>Projects & Websites I've Created</h3>
         <div className={styles.projects}>
           {projects.map(project => (
-            <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
+            <Link to={"/docs/" + project.frontmatter.slug} key={project.id}>
               <div>
                 <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
                 <h3>{ project.frontmatter.title }</h3>
