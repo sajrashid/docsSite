@@ -7,16 +7,16 @@ import styles from '../../styles/projects.module.css'
 
 const Projects = ({ data }) => {
   console.log(data)
-  const projects = data.projects.nodes
+  const docs = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
 
   return (
     <Layout>
       <div className={styles.portfolio}>
-        <h2>Portfolio</h2>
+        <h2>React Dynamic Json Table</h2>
         <h3>Projects & Websites I've Created</h3>
         <div className={styles.projects}>
-          {projects.map(project => (
+          {docs.map(project => (
             <Link to={"/docs/" + project.frontmatter.slug} key={project.id}>
               <div>
                 <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />

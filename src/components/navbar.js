@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/projects">docs</Link>
+        <Link to="/docs">Docs</Link>
       </div>
     </nav>
   )

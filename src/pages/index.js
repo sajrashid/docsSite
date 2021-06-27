@@ -1,8 +1,9 @@
-import React from "react"
 import { Link, graphql } from 'gatsby'
-import Layout from "../components/Layout"
-import styles from '../styles/home.module.css'
+
 import Img from "gatsby-image"
+import Layout from "../components/Layout"
+import React from "react"
+import styles from '../styles/home.module.css'
 
 export default function Home({ data }) {
   console.log(data)
@@ -11,10 +12,9 @@ export default function Home({ data }) {
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
+          <h2>React Dynamic JSON Table</h2>
           <p>UX designer & web developer based in Manchester.</p>
-          <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
+          <Link className={styles.btn} to="/docs">My Portfolio Projects</Link>
         </div>
         <Img fluid={data.file.childImageSharp.fluid} />
       </section>
