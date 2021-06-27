@@ -1,0 +1,3 @@
+[submodule "src/components/React-Dynamic-Json-Table"]
+	path = src/components/React-Dynamic-Json-Table
+	url = https://github.com/sajrashid/React-Dynamic-Json-Table
