@@ -1,7 +1,7 @@
 import Img from "gatsby-image"
-import Layout from "../components/Layout"
+import Layout from "../../src/components/layout"
 import React from "react"
-import styles from '../styles/project-details.module.css'
+import styles from "../styles/project-details.module.css"
 
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
@@ -15,17 +15,20 @@ const ProjectDetails = ({ data }) => {
         <div className={styles.featured}>
           <Img fluid={featuredImg.childImageSharp.fluid} />
         </div>
-        <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          className={styles.html}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </Layout>
   )
 }
- 
+
 export default ProjectDetails
 
 export const query = graphql`
   query ProjectDetails($slug: String) {
-    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         stack
