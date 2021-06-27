@@ -3,16 +3,18 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../../src/components/layout"
 import React from "react"
+import Table from 'react-dj-table'
 import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
   console.log(data)
-
+  var json = [{id:0,name:"cat1", isParent: false},{id:1,name:"cat2", isParent: true}]
   return (
     <Layout>
       <section className={styles.header}>
         <div>
           <h2>React Dynamic JSON Table</h2>
+          <Table json={json}/>
 
           <p>UX designer & web developer based in Manchester.</p>
           <Link className={styles.btn} to="/docs">
