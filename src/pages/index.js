@@ -13,10 +13,11 @@ export default function Home({ data }) {
       <section className={styles.header}>
         <div>
           <h2>React Dynamic JSON Table</h2>
+
           <p>UX designer & web developer based in Manchester.</p>
           <Link className={styles.btn} to="/docs">My Portfolio Projects</Link>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        {/* <Img    fluid={data.file.childImageSharp.fluid} /> */}
       </section>
     </Layout>
   )

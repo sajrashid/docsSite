@@ -1,11 +1,14 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-template-columns: 1fr ;
   align-items: center;
+  text-align: center;
 }
 .header h2 {
-  font-size: 4em;
+  font-size: 4rem;
+  color: #333;
+  text-shadow: 2px 1px 2px   rgb(0, 0, 0);
+  z-index: 100;
 }
 .header h3 {
   font-size: 3em;
@@ -19,4 +22,8 @@
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+}
+
+.mainpic {
+  z-index: -1;
 }

@@ -1,3 +1,5 @@
+import '../styles/navbar.css'
+
 import { Link } from 'gatsby'
 import React from 'react'
 
@@ -14,8 +16,8 @@ export default function Navbar() {
   // const { title } = data.site.siteMetadata
 
   return (
-    <nav>
-      <h1>title</h1>
+    <nav className="topnav">
+      <h1>Doc's and demo site</h1>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

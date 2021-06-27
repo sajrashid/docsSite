@@ -1,0 +1,12 @@
+.topnav{
+ margin-top:1rem;
+}
+
+.topnav h1 {
+    padding-left:1rem;
+}
+
+.topnav .links a {
+    padding: 0.4rem;
+    margin-right: 1rem;
+}
