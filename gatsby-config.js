@@ -11,6 +11,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-remark-embedded-codesandbox`,
+      options: {
+        name: `docs`,
+        path: `${__dirname}/src/examples/`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `docs`,
