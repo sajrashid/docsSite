@@ -11,10 +11,24 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-remark-embedded-codesandbox`,
+      resolve: `gatsby-remark-code-repls`,
       options: {
-        name: `docs`,
-        path: `${__dirname}/src/examples/`,
+        name: `repls`,
+        externals: [
+          'https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.production.min.js',
+        ],
+        dependencies: ['d3'],
+        codesandbox: ['react', 'react-dom', 'd3'],
+        html: '<div id="root"></div>',
+        directory: `${__dirname}/src/examples/`,
+        target: '_blank',
+         // Provider specific options
+    codepen: {
+      includeMatchingCSS: false,
+    },
+    codesandbox: {
+    }
       },
     },
     {
