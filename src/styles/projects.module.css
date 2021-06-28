@@ -2,6 +2,7 @@
   text-align: left;
   height: 100%;
   display: flex;
+  margin-top: -2.15em;
 }
 .portfolio > h2 {
   font-size: 3em;
@@ -10,13 +11,24 @@
 .side{
   width:20%;
   max-width:18rem;
-  background-color: rgb(11, 12, 11);
+  background-color: #222;
   height: 100%;
-  padding-left: 0.3rem;
   height: auto;
+  padding-bottom: 100%;
+  padding-top:0.5em;
 }
 .side ul li {
-  padding:0.3rem;
+  padding:1rem;
+  border-bottom:solid 1px #999;
+  cursor: pointer;
+  color:#eee;
+
+}
+.side ul li span {
+  color:eee!important;
+}
+.side ul li:hover  {
+  background-color: #111;
 }
 .portfolio > h3 {
   font-size: 2em;
@@ -28,6 +40,7 @@
   float: right;
   clear: left;
   position: relative;
+  padding:1em;
 }
 .projects h3 {
   text-align: center;
