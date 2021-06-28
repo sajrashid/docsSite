@@ -2,10 +2,11 @@ import { Link, graphql, navigate } from "gatsby"
 import React, {useState} from "react"
 
 import Layout from "../../components/layout"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import styles from "../../styles/projects.module.css"
 
 const Projects = ({ data }) => {
- 
+  deckDeckGoHighlightElement()
   const docs = data.projects.nodes
 
   const [selectedDoc, setSelectedDoc] = useState(data.projects.nodes[0].html)

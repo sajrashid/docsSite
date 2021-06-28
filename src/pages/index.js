@@ -7,6 +7,8 @@ import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
   console.log(data)
+
+
   var json = [{id:0,name:"cat1", isParent: false},{id:1,name:"cat2", isParent: true}]
   return (
     <Layout>
