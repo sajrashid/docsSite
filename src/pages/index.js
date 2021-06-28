@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../../src/components/layout"
 import React from "react"
-import Table from 'react-dj-table'
 import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
@@ -14,7 +13,6 @@ export default function Home({ data }) {
       <section className={styles.header}>
         <div>
           <h2>React Dynamic JSON Table</h2>
-          <Table json={json}/>
 
           <p>UX designer & web developer based in Manchester.</p>
           <Link className={styles.btn} to="/docs">

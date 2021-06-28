@@ -1,32 +1,46 @@
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
+import React, {useState} from "react"
 
-import Img from "gatsby-image"
 import Layout from "../../components/layout"
-import React from "react"
 import styles from "../../styles/projects.module.css"
 
 const Projects = ({ data }) => {
-  console.log(data)
+ 
   const docs = data.projects.nodes
-  const contact = data.contact.siteMetadata.contact
+
+  const [selectedDoc, setSelectedDoc] = useState(data.projects.nodes[0].html)
+  
+  function handleClick(e) {
+   
+    var link = e.currentTarget.id
+    //navigate("/docs/" + link)
+    docs.forEach(element => {
+      if (element.frontmatter.slug===link) {
+        setSelectedDoc(element.html)
+      }
+    });
+    
+  }
+
 
   return (
     <Layout>
       <div className={styles.portfolio}>
-        <h2>React Dynamic Json Table</h2>
-        <h3>Projects & Websites I've Created</h3>
-        <div className={styles.projects}>
-          {docs.map(project => (
-            <Link to={"/docs/" + project.frontmatter.slug} key={project.id}>
-              <div>
-                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
-                <h3>{project.frontmatter.title}</h3>
-                <p>{project.frontmatter.stack}</p>
-              </div>
-            </Link>
-          ))}
+        <div className={styles.side}>
+          <ul>
+            {docs.map(project => (
+              <li key={"li" + project.id}>
+                <span id={project.frontmatter.slug} onClick={handleClick} key={project.id}>
+                  {project.frontmatter.title}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <p>Likewhat you see? email me at {contact} for a quote!</p>
+        <div className={styles.projects}>
+
+        <div dangerouslySetInnerHTML={{__html:selectedDoc}} />;
+        </div>
       </div>
     </Layout>
   )
@@ -36,30 +50,17 @@ export default Projects
 
 // export page query
 export const query = graphql`
-  query ProjectsPage {
-    projects: allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-    ) {
-      nodes {
-        frontmatter {
-          slug
-          stack
-          title
-          thumb {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        id
+query ProjectsPage {
+  projects: allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
+    nodes {
+      frontmatter {
+        slug
+        stack
+        title
       }
-    }
-    contact: site {
-      siteMetadata {
-        contact
-      }
+      id
+      html
     }
   }
+}
 `

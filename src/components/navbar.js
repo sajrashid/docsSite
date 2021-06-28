@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="topnav">
-      <h1>Doc's and demo site</h1>
+      <h2>Doc's and demo site</h2>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

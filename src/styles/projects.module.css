@@ -1,26 +1,41 @@
 .portfolio {
-  text-align: center;
+  text-align: left;
+  height: 100%;
+  display: flex;
 }
 .portfolio > h2 {
   font-size: 3em;
   margin-top: 80px;
+}
+.side{
+  width:20%;
+  max-width:18rem;
+  background-color: rgb(11, 12, 11);
+  height: 100%;
+  padding-left: 0.3rem;
+  height: auto;
+}
+.side ul li {
+  padding:0.3rem;
 }
 .portfolio > h3 {
   font-size: 2em;
   font-weight: 400;
 }
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
+  background-color: rgb(255, 254, 251);
+  width: 79%;
+  float: right;
+  clear: left;
+  position: relative;
 }
 .projects h3 {
   text-align: center;
   margin: 20px auto 0px;
   font-weight: 500;
+  color:red;
 }
 .projects p {
-  color: #ccc;
+  color:#111;
   margin-top: 4px;
 }

@@ -11,8 +11,11 @@ html, body {
   min-height: 100%;
 }
 body {
-  background: radial-gradient(at top left, rgb(88, 128, 214) 0%, rgb(9, 16, 107) 100%);
+  background: radial-gradient(at top left, rgb(236, 238, 241) 0%, rgb(175, 174, 174) 100%);
   background-repeat: no-repeat;
+}
+#___gatsby #gatsby-focus-wrapper {
+  height: 100%;
 }
 p {
   margin: 16px auto;
@@ -23,6 +26,7 @@ p {
 .layout {
   max-width: 1200px;
   margin: 0 auto;
+  height:100%;
 }
 nav {
   display: grid;
@@ -47,4 +51,7 @@ footer p{
   text-align: center;
   color: #bbb;
   margin: 40px auto;
+}
+.content {
+  height: 100%;
 }
