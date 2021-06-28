@@ -17,7 +17,11 @@ export default function Navbar() {
 
   return (
     <nav className="topnav">
-      <h2>Doc's and demo site</h2>
+      <div className="toptitle">
+        <h4>Documentation & Examples</h4>
+        <h6>React Dynamic Json Table</h6>
+      </div>
+
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
