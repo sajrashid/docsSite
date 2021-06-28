@@ -7,6 +7,9 @@ thumb: ../images/thumbs/drums.png
 featuredImg: ../images/featured/drums-banner.png
 ---
 
+https://codesandbox.io/s/ynn88nx9x?view=split
+
+
 [CodePen link](https://codepen.io/swizec/pen/woNjVw)
 [embedded example](embedded-codesandbox://../../examples/getting-started/index.js)
 
