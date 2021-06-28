@@ -11,23 +11,29 @@
 .side{
   width:20%;
   max-width:18rem;
-  background-color: #222;
+  background-color: #0b172a;
   height: 100%;
   height: auto;
   padding-bottom: 50%;
   padding-top:0.5em;
+
+}
+.side ul{
+  list-style: none;
+
 }
 .side ul li {
-  padding:1rem;
+  list-style: none;
+  padding:1rem 0 1rem 0;
   border-bottom:solid 1px #999;
   cursor: pointer;
   color:#eee;
+  position: relative;
+  width:100%;
+  left:-1.2rem;
 
 }
-.side ul li span {
-  color:eee!important;
-  padding:1rem 1rem 1rem 0rem;
-}
+
 .side ul li:hover  {
   background-color: #111;
 }
@@ -47,40 +53,45 @@
   text-align: center;
   margin: 20px auto 0px;
   font-weight: 500;
-  color:red;
+  color:#0b172a;
 }
 .projects p {
-  color:#111;
+  color:#0b172a;
   margin-top: 4px;
 }
 .projects ul  {
 list-style: none;
 padding: 0.3rem;
 margin-top: 1rem;
-box-shadow: 1px 2px 7px 0px #999;
+box-shadow: 1px 2px 7px 0px #463940;
 border-radius: 0.3rem;
 margin-bottom: 1.5rem;
 }
 .projects deckgo-highlight-code{
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.projects  iframe{
+  box-shadow: 1px 2px 7px 0px #463940;
 }
 .projects strong{
  position: relative;
  top:0.3rem;
 padding:0.5rem 1rem 0.5rem 1rem;
-background-color: #222;color: #ddd;
+background-color: #0b172a;color: #ddd;
 border-radius: 0.3rem;
 }
 .projects em  {
   position: relative;
   top:0.3rem;
  padding:0.3rem 0.6rem 0.3rem 0.6rem;
- background-color: steelblue;color: #000;
+ background-color: #463940;;color: #fff;
  border-radius: 0.3rem;
 }
 .projects li  {
   padding: 0.8rem 0 0.8rem 1rem;
 }
-.projects  li:nth-child(odd) {background: rgb(241, 239, 227);}
+.projects  li:nth-child(odd) {background: rgb(240, 240, 240);}
 .projects  li:nth-child(even) {background: #fff}

@@ -26,6 +26,7 @@ featuredImg: ../images/featured/gaming-banner.png
 ```html
 <Table json={json} />
 ```
+https://codesandbox.io/s/ynn88nx9x?view=split
 
 * Pass any CSS classes as props (Tailwind example below)
 * Does not require an Id Column
@@ -59,6 +60,7 @@ const options = {
 ```html
 <Table json={json} options={options} />
 ```
+
 
 *More options*
 ```js
