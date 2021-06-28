@@ -8,9 +8,9 @@ featuredImg: ../images/featured/drums-banner.png
 ---
 
 [CodePen link](https://codepen.io/swizec/pen/woNjVw)
-[embedded example](embedded-codesandbox://examples/getting-started)
+[embedded example](embedded-codesandbox://../../examples/getting-started/index.js)
 
-[codesandbox](embedded-codesandbox://world-heritage)
+[codesandbox](embedded-codesandbox://../../examples/world-heritage/index.js)
 
 [codesandbox](embedded-codesandbox://hello-world)
 [Check this out on Codesandbox](codesandbox://your-first-app/fac.js)
