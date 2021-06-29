@@ -4,7 +4,7 @@
   "description": "",
   "dependencies": {
     "react": "16.8.6",
-    "react-dj-table": "^0.9.3",
+    "react-dj-table": "0.9.4",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1"
   },
