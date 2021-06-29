@@ -1,8 +1,8 @@
-import { Link, graphql, navigate } from "gatsby"
 import React, {useState} from "react"
 
 import Layout from "../../components/layout"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { graphql } from "gatsby"
 import styles from "../../styles/projects.module.css"
 
 const Projects = ({ data }) => {
@@ -14,7 +14,6 @@ const Projects = ({ data }) => {
   function handleClick(e) {
    
     var link = e.currentTarget.id
-    //navigate("/docs/" + link)
     docs.forEach(element => {
       if (element.frontmatter.slug===link) {
         setSelectedDoc(element.html)
@@ -31,7 +30,7 @@ const Projects = ({ data }) => {
           <ul>
             {docs.map(project => (
               <li key={"li" + project.id}>
-                <span id={project.frontmatter.slug} onClick={handleClick} key={project.id}>
+                <span id={project.frontmatter.slug} onClick={handleClick}   tabIndex={0}  role="button"  onKeyDown={handleClick} key={project.id}>
                   {project.frontmatter.title}
                 </span>
               </li>

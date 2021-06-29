@@ -4,17 +4,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 
 export default function Navbar() {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-  // const { title } = data.site.siteMetadata
-
+  
   return (
     <nav className="topnav">
       <div className="toptitle">
@@ -24,8 +14,8 @@ export default function Navbar() {
 
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/docs">Docs</Link>
+        <Link to="/api">API</Link>
+        <Link to="/docs">Examples & Doc's</Link>
       </div>
     </nav>
   )
