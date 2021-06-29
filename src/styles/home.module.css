@@ -7,9 +7,20 @@
 }
 .header h2 {
   font-size: 4rem;
-  color: #333;
-  text-shadow: 2px 1px 2px   rgb(0, 0, 0);
+  color: rgb(38, 138, 252);
+  text-shadow: 2px 1px 2px   rgb(66, 66, 66);
   z-index: 100;
+  position: relative;
+}
+.header h2>small {
+  position: absolute;
+  font-family: monospace;
+  top:5.2rem;
+  left:10.7rem;
+  font-size:1rem;
+  min-width:12em;
+  color: rgb(109, 115, 116);
+  text-shadow: none;
 }
 .header h3 {
   font-size: 3em;
@@ -18,13 +29,16 @@
 }
 .btn {
   display: inline-block;
-  background: #D42990;
+  background: rgb(0, 194, 0);
   padding: 10px 16px;
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+  box-shadow: 1px 3px 9px 0 #333;
 }
-
+.btn:hover{
+  background: rgb(0, 218, 0);
+}
 .mainpic {
   z-index: -1;
 }

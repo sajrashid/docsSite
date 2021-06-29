@@ -6,7 +6,7 @@ const Api = () => {
     <Layout>
       <div>
         <h1>API Documentation Page</h1>
-        <p>working on it...</p>
+        <p> Todo</p>
       </div>
     </Layout>
   )

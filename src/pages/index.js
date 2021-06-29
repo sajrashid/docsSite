@@ -12,11 +12,15 @@ export default function Home({ data }) {
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>React Dynamic JSON Table</h2>
+          <h2>React Dynamic JSON Table
+            <small>Responsive standard HTML table</small>
+          </h2>
 
-          <p>UX designer & web developer based in Manchester.</p>
+         
+          <p>Tailwind, Bootstrap, Sematic UI examples</p>
+
           <Link className={styles.btn} to="/docs">
-            My Portfolio Projects
+            Live Examples
           </Link>
         </div>
       </section>
