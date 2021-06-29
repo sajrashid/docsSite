@@ -1,26 +1,25 @@
 ---
-title: Retro Gaming Zone
+title: Search & Filter
 stack: Svelte & Firebase
-slug: retro-gaming-zone
+slug: search
 date: 2021-01-03T00:00:00+00:00
 thumb: ../images/thumbs/gaming.png
 featuredImg: ../images/featured/gaming-banner.png
 ---
 
-# React Dynamic JSON Table
-### NPM Testing Pre-Release
-<img alt="demo png" src="https://github.com/sajrashid/hooks/blob/main/demo.png" width="600" height="320" />
-<sub>Robots lovingly delivered by Robohash.org</sub>
-<br/>
 
-#### Renders JSON array dynamically, emits a standard CSS agnostic HTML table.
+### Fuzzy search 
+
+<sub>Filters TBD</sub>
+
+`supports multi keywords`
 
 **Usage**
  ```js
-    json=[
-        {name:'abc',age: 25, desc:'some desc'},
-        {name:'xyz',age: 99, desc:'another desc'},
-    ] 
+   const options = {
+        searchInputCss: 'searchInputCss',
+        filters: true,
+    }
 ```
 
 ```html

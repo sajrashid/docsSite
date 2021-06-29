@@ -49,12 +49,7 @@
   position: relative;
   padding:1em;
 }
-.projects h3 {
-  text-align: center;
-  margin: 20px auto 0px;
-  font-weight: 500;
-  color:#0b172a;
-}
+
 .projects p {
   color:#0b172a;
   margin-top: 4px;
@@ -71,10 +66,33 @@ margin-bottom: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
+  animation: fadein 1s linear;
+}
+.projects h1 {
+  text-align: left;
+}
+.projects h2 {
+  text-align: left;
+}
+.projects h3 {
+text-align: left;
+padding: 0.3rem 1rem 0.3rem 1rem;
+background-color: #e4e4e4;
+min-height: 1rem;
+display: inline;
+border-radius: 0.3rem;
+margin-bottom: 1rem;
 }
 
 .projects  iframe{
   box-shadow: 1px 2px 7px 0px #463940;
+    height:500px;
+    opacity: 1;
+    animation: fadein 2s linear;
+}
+@keyframes fadein {
+  0% { opacity: 0 }
+  50% { opacity: 0.5 }
 }
 .projects strong{
  position: relative;

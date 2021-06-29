@@ -1,27 +1,28 @@
 import { Link, graphql } from "gatsby"
 
-import Img from "gatsby-image"
 import Layout from "../../src/components/layout"
 import React from "react"
 import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
-  console.log(data)
 
 
-  var json = [{id:0,name:"cat1", isParent: false},{id:1,name:"cat2", isParent: true}]
+  //var json = [{id:0,name:"cat1", isParent: false},{id:1,name:"cat2", isParent: true}]
   return (
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>React Dynamic JSON Table</h2>
+          <h2>React Dynamic JSON Table
+            <small>Responsive standard HTML table</small>
+          </h2>
 
-          <p>UX designer & web developer based in Manchester.</p>
+         
+          <p>Tailwind, Bootstrap, Sematic UI examples</p>
+
           <Link className={styles.btn} to="/docs">
-            My Portfolio Projects
+            Live Examples
           </Link>
         </div>
-        {/* <Img    fluid={data.file.childImageSharp.fluid} /> */}
       </section>
     </Layout>
   )
