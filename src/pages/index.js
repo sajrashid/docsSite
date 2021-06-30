@@ -14,6 +14,7 @@ export default function Home({ data }) {
     customCols: [{ 'Avatar': '<div style="min-height:6em"><img  decoding="async" src=${Avatar}></img></div' }],
     pageable: true,
     filters: true,
+    tableCss:'ui fixed table',
     searchInputCss: 'searchInputCss',
     pagerCss:'pager',
   }
@@ -22,6 +23,7 @@ export default function Home({ data }) {
     <Layout>
       <Helmet>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"/>
       </Helmet>
 
       <section className={styles.header}>
