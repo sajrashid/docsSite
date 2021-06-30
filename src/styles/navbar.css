@@ -7,15 +7,19 @@
     color:#eeeeee;
     padding-left:0.7rem;
     padding-top: 0.2rem;
+    height: 3em;
 }
 .topnav .toptitle  h4 {
+    color: #eeeeee;
+    padding-left: 0.7rem;
+    padding-top: 0.2rem;
     position: relative;
-    color: #888;
-    width: 50%;
+    top: -1em;
 }
 .topnav .toptitle  h6 {
     position: relative;
-    top: -2.8em;
+    top: -4em;
+    left: 1.1em;
     color: rgb(0, 194, 0);
  }
 
