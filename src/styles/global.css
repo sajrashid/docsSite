@@ -64,8 +64,9 @@ footer p{
 }
 
 .tablecss {
- min-width: 80%;
- background-color:beige;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
  /* styling the pager would again require passing lots of classes and 
@@ -75,6 +76,7 @@ for the sake of simplicity the pager is buit using standard css  */
 .pager {
   float: left;
   margin: 0 auto;
+  box-shadow: 1px 3px 3px 0 #e2e2e2;
 }
 .pager > * {
    color: #eee;
@@ -86,20 +88,10 @@ for the sake of simplicity the pager is buit using standard css  */
   line-height: 1.8rem;
   margin-top: 0.5rem;
   padding: 0.4rem;
-  background-color: #00cccc;
   min-height: 2.4em;
   border-radius: 0.3em;
 }
-.pager .numberOfPages{
-   display: inline-block;
-   min-width:10em;
-   margin-left: 1rem;
-   margin-right: 1rem;
-   border-radius: 0.3rem;
-   height: 2.15em;
-   background-color: #00b3b3;
-   color:#333;
-}
+
 .pager input {
    border: 1px solid #666;
    margin: 0 0.4rem 0 0.4rem;
@@ -109,11 +101,10 @@ for the sake of simplicity the pager is buit using standard css  */
 /* current page no */
 .pager input[type='number']{
    position: relative;
-   top:0.1rem;
    max-width: 3em;
    height: 2em;
    padding-left: 0.4rem;
-   box-shadow: 1px 3px 3px 0 #2b5b3c;
+   box-shadow: 1px 3px 3px 0 #e2e2e2;
 } 
 .pager button {
    position: relative;
@@ -121,9 +112,9 @@ for the sake of simplicity the pager is buit using standard css  */
    padding:0rem 0.8rem 0.2rem 0.8rem;
    margin: 0 0.3rem 0 0.6rem;
    border-radius: 0.3rem;
-   background-color:#00cccc;
    border:none;
-   box-shadow: 1px 3px 3px 0 #2b5b3c;
+   color:#333;
+   box-shadow: 1px 3px 3px 0 #e2e2e2;
 }
 .pager button:hover::after {
    position: absolute;
@@ -139,19 +130,20 @@ for the sake of simplicity the pager is buit using standard css  */
 }
 
  .pager button:hover{
-   background-color: #00e7e7
+   background-color: #e6ffff
 }
 .tablecss .pager button:focus {
    outline: none;
 
 }
+
 /* targets number of pages without classname numberOfPages */
 .pager :nth-child(6){
    position: relative;
    top:0.1rem;
    font-size: 1rem;
    padding:  0 1rem 0 1rem;
-   color: #ddd;
+   color:#333;
 }
 /* targets the last item show page count */
 .pager :nth-child(7) span {
@@ -159,15 +151,14 @@ for the sake of simplicity the pager is buit using standard css  */
 }
 /* show select element 10 / 20 / 100 etc */
 .pager :nth-child(7) select {
- min-height: 2.5em;
- position: relative;
- top:0.15rem;
-margin-right: 0.7rem;
-border-radius: 0.3rem;
-padding-left: 0.3rem;
-box-shadow: 1px 3px 3px 0 #2b5b3c;
+  min-height: 2.2em;
+  position: relative;
+  /* top: 0.15rem; */
+  margin-right: 0.7rem;
+  border-radius: 0.3rem;
+  padding-left: 0.3rem;
+  box-shadow: 1px 3px 3px 0 #e2e2e2;
 }
-
 /*  move the search input left or right by chaging float left/right */
 .searchInputCss span {
    float: right;
@@ -181,7 +172,7 @@ box-shadow: 1px 3px 3px 0 #2b5b3c;
 }
 .searchInputCss  input:focus {
    outline: none !important;
-   border: solid 1px #00cccc;
+   border: solid 1px #d3d3d3;
 }
 
 .pager button:disabled,
