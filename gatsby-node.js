@@ -7,18 +7,16 @@ exports.onCreateWebpackConfig = ({
   plugins,
   actions
 }) => {
-
   actions.setWebpackConfig({
     resolve: {
       alias: {
         '~components': path.resolve(__dirname, 'src/components'),
         '~images': path.resolve(__dirname, 'src/images'),
-        '~hooks': path.resolve(__dirname, 'src/lib/hooks')
       },
     }
   });
 
-  if (stage === "develop-html") {
+  if (stage === "build-html") {
     actions.setWebpackConfig({
       module: {
         rules: [

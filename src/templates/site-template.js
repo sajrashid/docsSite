@@ -21,20 +21,13 @@ const ProjectDetails = ({ data }) => {
 export default ProjectDetails
 
 export const query = graphql`
-  query ProjectDetails($slug: String) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        stack
-        title
-        featuredImg {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
+query ProjectDetails($slug: String) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      stack
+      title
     }
   }
-`
+}`
+

@@ -1,7 +1,6 @@
-import { Link, graphql } from "gatsby"
-
 import Helmet from 'react-helmet'
 import Layout from '../../src/components/layout'
+import { Link } from "gatsby"
 import React from 'react'
 import Table from 'react-dj-table'
 import {header} from '../styles/home.module.css'
@@ -46,14 +45,4 @@ export default function Home({ data }) {
   )
 }
 
-export const query = graphql`
-  query Banner {
-    file(relativePath: { eq: "banner.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+
