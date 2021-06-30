@@ -1,4 +1,3 @@
-import Img from "gatsby-image"
 import Layout from "../../src/components/layout"
 import React from "react"
 import styles from "../styles/project-details.module.css"
