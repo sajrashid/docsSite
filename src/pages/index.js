@@ -1,3 +1,5 @@
+import 'semantic-ui-css/semantic.min.css'
+
 import Helmet from 'react-helmet'
 import Layout from '../../src/components/layout'
 import { Link } from "gatsby"
@@ -20,11 +22,6 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      <Helmet>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" />
-      </Helmet>
-
       <section className={header}>
         <div className="titleContent">
           <h2>React Dynamic JSON Table

@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import Layout from "../../src/components/layout"
 import React from "react"
 import {details} from "../styles/project-details.module.css"

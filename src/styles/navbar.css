@@ -1,13 +1,14 @@
 .topnav{
  margin-top:0;
  background-color: #0b172a;
- max-height: 2.6rem;
 }
 .topnav .toptitle {
     color:#eeeeee;
     padding-left:0.7rem;
     padding-top: 0.2rem;
     height: 3em;
+    position: relative;
+    top:1em;
 }
 .topnav .toptitle  h4 {
     color: #eeeeee;
@@ -18,7 +19,7 @@
 }
 .topnav .toptitle  h6 {
     position: relative;
-    top: -4em;
+    top: -4.5em;
     left: 1.1em;
     color: rgb(0, 194, 0);
  }
