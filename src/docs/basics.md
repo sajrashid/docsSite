@@ -8,7 +8,7 @@ featuredImg: ../images/featured/skate-banner.png
 ---
 ## Installation
 
-**npm i react-dj-table**
+**yarn add react-dj-table**
 
 <br/>
 
