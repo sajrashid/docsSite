@@ -1,9 +1,9 @@
 import React, {useState} from "react"
+import {portfolio, projects, side} from "../../styles/projects.module.css"
 
 import Layout from "../../components/layout"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import { graphql } from "gatsby"
-import styles from "../../styles/projects.module.css"
 
 const Projects = ({ data }) => {
   deckDeckGoHighlightElement()
@@ -25,8 +25,8 @@ const Projects = ({ data }) => {
 
   return (
     <Layout>
-      <div className={styles.portfolio}>
-        <div className={styles.side}>
+      <div className={portfolio}>
+        <div className={side}>
           <ul>
             {docs.map(project => (
               <li key={"li" + project.id}>
@@ -37,7 +37,7 @@ const Projects = ({ data }) => {
             ))}
           </ul>
         </div>
-        <div className={styles.projects}>
+        <div className={projects}>
 
         <div dangerouslySetInnerHTML={{__html:selectedDoc}} />;
         </div>

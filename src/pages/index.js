@@ -1,11 +1,11 @@
 import { Link, graphql } from "gatsby"
 
-import Helmet from "react-helmet"
-import Layout from "../../src/components/layout"
-import React from "react"
+import Helmet from 'react-helmet'
+import Layout from '../../src/components/layout'
+import React from 'react'
 import Table from 'react-dj-table'
+import {header} from '../styles/home.module.css'
 import robots from '../robots.json'
-import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
 
@@ -26,13 +26,13 @@ export default function Home({ data }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" />
       </Helmet>
 
-      <section className={styles.header}>
+      <section className={header}>
         <div className="titleContent">
           <h2>React Dynamic JSON Table
           </h2>
           <small>Responsive standard HTML table</small>
           <p>Tailwind, Bootstrap, Sematic UI examples</p>
-          <Link className={styles.btn} to="/docs">
+          <Link  to="/docs">
             Live Examples
           </Link>
           <div className="tablecss">
@@ -40,7 +40,6 @@ export default function Home({ data }) {
             <Table json={robots} options={options} />
             <small>"Robots lovingly delivered by Robohash.org" or something.</small>
           </div>
-
         </div>
       </section>
     </Layout>

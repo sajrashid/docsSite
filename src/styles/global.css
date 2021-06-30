@@ -45,8 +45,6 @@ nav {
 }
 nav .links {
   text-align: right;
-    color: black;
-    position: relative;
     background-color: black;
     float: right;
     top: -5.5em;
