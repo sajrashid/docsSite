@@ -22,4 +22,37 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
+  // https://github.com/gatsbyjs/gatsby/issues/17661
+  exports.onCreateWebpackConfig = ({
+    stage,
+    rules,
+    loaders,
+    plugins,
+    actions
+  }) => {
+  
+    actions.setWebpackConfig({
+      resolve: {
+        alias: {
+          '~components': path.resolve(__dirname, 'src/components'),
+          '~images': path.resolve(__dirname, 'src/images'),
+          '~hooks': path.resolve(__dirname, 'src/lib/hooks')
+        },
+      }
+    });
+  
+    if (stage === "develop-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /canvas/,
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  };
+
 }

@@ -1,26 +1,115 @@
 .portfolio {
-  text-align: center;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  margin-top: -2.15em;
 }
 .portfolio > h2 {
   font-size: 3em;
   margin-top: 80px;
+}
+.side{
+  width:20%;
+  max-width:18rem;
+  background-color: #0b172a;
+  height: 100%;
+  height: auto;
+  padding-bottom: 50%;
+  padding-top:0.5em;
+
+}
+.side ul{
+  list-style: none;
+
+}
+.side ul li {
+  list-style: none;
+  padding:1rem 0 1rem 0;
+  border-bottom:solid 1px #999;
+  cursor: pointer;
+  color:#eee;
+  position: relative;
+  width:100%;
+  left:-1.2rem;
+
+}
+
+.side ul li:hover  {
+  background-color: #111;
 }
 .portfolio > h3 {
   font-size: 2em;
   font-weight: 400;
 }
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
+  background-color: rgb(255, 254, 251);
+  width: 79%;
+  float: right;
+  clear: left;
+  position: relative;
+  padding:1em;
 }
-.projects h3 {
-  text-align: center;
-  margin: 20px auto 0px;
-  font-weight: 500;
-}
+
 .projects p {
-  color: #ccc;
+  color:#0b172a;
   margin-top: 4px;
 }
+.projects ul  {
+list-style: none;
+padding: 0.3rem;
+margin-top: 1rem;
+box-shadow: 1px 2px 7px 0px #463940;
+border-radius: 0.3rem;
+margin-bottom: 1.5rem;
+}
+.projects deckgo-highlight-code{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  animation: fadein 1s linear;
+}
+.projects h1 {
+  text-align: left;
+}
+.projects h2 {
+  text-align: left;
+}
+.projects h3 {
+text-align: left;
+padding: 0.3rem 1rem 0.3rem 1rem;
+background-color: #e4e4e4;
+min-height: 1rem;
+display: inline;
+border-radius: 0.3rem;
+margin-bottom: 1rem;
+}
+
+.projects  iframe{
+  box-shadow: 1px 2px 7px 0px #463940;
+    height:500px;
+    opacity: 1;
+    animation: fadein 2s linear;
+}
+@keyframes fadein {
+  0% { opacity: 0 }
+  50% { opacity: 0.5 }
+}
+.projects strong{
+ position: relative;
+ top:0.3rem;
+padding:0.5rem 1rem 0.5rem 1rem;
+background-color: #0b172a;color: #ddd;
+border-radius: 0.3rem;
+}
+.projects em  {
+  position: relative;
+  top:0.3rem;
+ padding:0.3rem 0.6rem 0.3rem 0.6rem;
+ background-color: #463940;;color: #fff;
+ border-radius: 0.3rem;
+}
+.projects li  {
+  padding: 0.8rem 0 0.8rem 1rem;
+}
+.projects  li:nth-child(odd) {background: rgb(240, 240, 240);}
+.projects  li:nth-child(even) {background: #fff}

@@ -1,25 +1,49 @@
 import { Link, graphql } from "gatsby"
 
-import Img from "gatsby-image"
+import Helmet from "react-helmet"
 import Layout from "../../src/components/layout"
 import React from "react"
+import Table from 'react-dj-table'
+import robots from '../robots.json'
 import styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
-  console.log(data)
+
+  const options = {
+    iconCols: [{ 'email': '<i class="envelope icon"></i>Email' }],
+    customCols: [{ 'Avatar': '<div style="min-height:5em"><img  decoding="async" src=${Avatar}></img></div' }],
+    pageable: true,
+    filters: true,
+    tableCss: 'ui fixed table',
+    searchInputCss: 'searchInputCss',
+    pagerCss: 'pager',
+  }
 
   return (
     <Layout>
-      <section className={styles.header}>
-        <div>
-          <h2>React Dynamic JSON Table</h2>
+      <Helmet>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" />
+      </Helmet>
 
-          <p>UX designer & web developer based in Manchester.</p>
+      <section className={styles.header}>
+        <div className="titleContent">
+          <h2>React Dynamic JSON Table
+          </h2>
+          <small>Responsive standard HTML table</small>
+          <div >
+          </div>
+          <p>Tailwind, Bootstrap, Sematic UI examples</p>
           <Link className={styles.btn} to="/docs">
-            My Portfolio Projects
+            Live Examples
           </Link>
+          <div className="tablecss">
+            <div className="tabletitle">Responsive table styled with Sematic UI, resize the broswer to see the columns collapse</div>
+            <Table json={robots} options={options} />
+            <small>"Robots lovingly delivered by Robohash.org" or something.</small>
+          </div>
+
         </div>
-        {/* <Img    fluid={data.file.childImageSharp.fluid} /> */}
       </section>
     </Layout>
   )
