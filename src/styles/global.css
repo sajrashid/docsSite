@@ -21,11 +21,16 @@ p {
   line-height: 1.5em;
 }
 
+
+
 /* layout & nav */
 .layout {
   width:100%;
   margin: 0 auto;
   height:100%;
+}
+.titleContent {
+  height: 100%;
 }
 nav {
   display: grid;
@@ -35,17 +40,20 @@ nav {
  
 }
 nav .links {
-  display: inline-block;
   text-align: right;
-}
+    color: black;
+    position: relative;
+    background-color: black;
+    float: right;
+    top: -5.5em;
+  }
 nav a {
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 20px;
-  font-weight: 400;
-  padding-bottom: 8px;
+  /* font-weight: 400; */
+  /* padding-bottom: 8px; */
   border-bottom: 3px solid transparent;
-  color:white;
-
+  color: white;
 }
 nav a:hover {
   border-color: white;
@@ -63,13 +71,27 @@ footer p{
   width:100%;
 }
 
+.tabletitle{
+  padding: 1em;
+  background-color: rgb(224, 224, 224);
+  width:100%;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
 .tablecss {
-  padding-top: 2em;
+  padding: 2em;
   max-width: 80%;
   display: block;
   margin: 0 auto;
 }
 
+
+.tablecss table>tbody>tr>td>div>img{
+height: 4em;
+}
  /* styling the pager would again require passing lots of classes and 
 custom options, that can make config difficult
 for the sake of simplicity the pager is buit using standard css  */
@@ -120,12 +142,12 @@ for the sake of simplicity the pager is buit using standard css  */
 .pager button:hover::after {
    position: absolute;
    opacity: 0.8;
-   border-radius: 0.3rem;
-   font-size: 0.8rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   border-radius: 0.3em;
+   font-size: 0.8em;
+   padding-left: 1em;
+   padding-right: 1em;
    background-color: rgb(44, 44, 44);
-   bottom: -2rem;
+   top: 2em;
    color: #eee;
    content: attr(data-content);
 }
