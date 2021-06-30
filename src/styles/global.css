@@ -67,40 +67,6 @@ footer p{
  min-width: 80%;
  background-color:beige;
 }
-.tablecss table {
-  font-family: 'Arial';
-  table-layout: fixed;
-  margin: 25px auto;
-  border-collapse: collapse;
-  border: 1px solid #eee;
-  border-bottom: 2px solid #00cccc;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
- }
- .tablecss tr>td>div>img{
-   max-height: 4em;
- }
-
- .tablecss table tr:hover {
-  background: #f4f4f4;
- }
- .tablecss table tr:hover td {
-  color: #555;
- }
- .tablecss table th, .tablecss table td {
-  color: #999;
-  border: 1px solid #eee;
-  padding: 12px 35px;
-  border-collapse: collapse;
- }
- .tablecss table th {
-  background: #00cccc;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
- }
- .tablecss table th.last {
-  border-right: none;
- }
 
  /* styling the pager would again require passing lots of classes and 
 custom options, that can make config difficult
