@@ -31,14 +31,12 @@ export default function Home({ data }) {
           <h2>React Dynamic JSON Table
           </h2>
           <small>Responsive standard HTML table</small>
-          <div >
-          </div>
           <p>Tailwind, Bootstrap, Sematic UI examples</p>
           <Link className={styles.btn} to="/docs">
             Live Examples
           </Link>
           <div className="tablecss">
-            <div className="tabletitle">Responsive table styled with Sematic UI, resize the broswer to see the columns collapse</div>
+            <div className="tabletitle">Responsive table styled with Sematic UI, resize the browser to see the columns collapse</div>
             <Table json={robots} options={options} />
             <small>"Robots lovingly delivered by Robohash.org" or something.</small>
           </div>
