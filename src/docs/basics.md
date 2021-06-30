@@ -8,7 +8,7 @@ featuredImg: ../images/featured/skate-banner.png
 ---
 ## Installation
 
-**npm i react-dj-table**
+**yarn add react-dj-table**
 
 <br/>
 
@@ -40,5 +40,4 @@ import Table from 'react-dj-table'
 <Table json={json} options={options} />
 ```
 
-
-https://codesandbox.io/s/ynn88nx9x?view=split
+https://codesandbox.io/s/upbeat-keller-sw7p8?file=/index.js
