@@ -8,7 +8,6 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-transformer-remark`,
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-filesystem`,
