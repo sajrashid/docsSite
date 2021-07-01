@@ -97,7 +97,9 @@ footer p{
   height: 100%;
   width:100%;
 }
-
+.content p {
+  font-size:1.5em;
+}
 .tabletitle{
   padding: 1em;
   background-color: rgb(224, 224, 224);

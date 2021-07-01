@@ -9,7 +9,7 @@ featuredImg: ../images/featured/food-banner.png
 
 ### Customising Columns
 
-`pass icons, change column headings and pass custom HTML and css into the table headers, the input is safely sanitised using dompurify.`
+pass icons, change column headings and pass custom HTML and css into the table headers, the input is safely sanitised using dompurify.
 
 
  ```js
