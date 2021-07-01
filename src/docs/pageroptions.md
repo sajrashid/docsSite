@@ -32,9 +32,7 @@ featuredImg: ../images/featured/shoes-banner.png
 
 ```
 
-see the sandbox for a complete example or scroll below
-
-https://codesandbox.io/s/ynn88nx9x?view=split
+Todo codesanbox example
 
 complete example, similar example to the sandbox
 
