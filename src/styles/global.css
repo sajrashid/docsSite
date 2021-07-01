@@ -64,7 +64,12 @@ blockquote {
   background-color: #610909;
   color:yellow;
 }
-
+.gatsby-code-button-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: gray;
+}
 .forkme{
   position: absolute;
   right: 0;
