@@ -7,7 +7,7 @@ thumb: ../images/thumbs/shoes.png
 featuredImg: ../images/featured/shoes-banner.png
 ---
 
-**Options**
+### Add Pager
  ```js
   const options = {
     pageable: true,

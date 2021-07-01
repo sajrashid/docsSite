@@ -14,9 +14,9 @@ Works with any standard table css.
 
 <sub>standard css example, see the second example in basics.</sub>
 
-Utility css framewroks like Tailwind add table styles to specific elements.
+Utility css frameworks like Tailwind add table styles to specific elements.
 
-### TailWind example
+### Tailwind example
  ```js
  const options = {
     tableCss: "table-fixed cursor-pointer w-full",

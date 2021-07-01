@@ -6,6 +6,12 @@ date: 2021-02-01T00:00:00+00:00
 thumb: ../images/thumbs/skate.png
 featuredImg: ../images/featured/skate-banner.png
 ---
+
+```js
+alert('click to copy 💾');
+```
+
+
 ## Motivation
 
 Sometimes, you just want a simple easy start component. perhaps you're just prototyping. some componenets are opinionated about the UI or require significant plumbing. Finding one was proving a challenge so I created this. A CSS agnostic proper HTML table that does the basics, sorting, paging, has filters etc, plugin some Json and you're good to go.
@@ -36,6 +42,7 @@ https://codesandbox.io/s/mystifying-diffie-qgrpp
 <sub>Options are not mandatory.</sub>
 
  ```js
+  
   const options = {
     selectable: true,
     selectedRowCss: "selectedRow"

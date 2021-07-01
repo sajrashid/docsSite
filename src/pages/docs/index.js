@@ -20,7 +20,6 @@ const Projects = ({ data }) => {
     //var entries = nodeList.entries()
    // console.log(entries)
    
- 
 
     const domRefNode =  React.createRef()
   
