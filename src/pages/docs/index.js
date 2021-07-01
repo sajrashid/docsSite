@@ -1,18 +1,33 @@
-import React, {useState} from "react"
 import {portfolio, projects, side} from "../../styles/projects.module.css"
 
 import Layout from "../../components/layout"
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import ProjectDetails from '../../templates/site-template'
+import React from "react"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
 import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
   deckDeckGoHighlightElement()
   const docs = data.projects.nodes
 
-  const [selectedDoc, setSelectedDoc] = useState(data.projects.nodes[0].html)
+  const [selectedDoc, setSelectedDoc] = React.useState(data.projects.nodes[0].html)
   
-  function handleClick(e) {
+    // we need to use useeffect 
+    //so we can get to the element after render
+
+   // const nodeList=domRefNode.current.firstChild.childNodes 
+
+    //var entries = nodeList.entries()
+   // console.log(entries)
    
+ 
+
+    const domRefNode =  React.createRef()
+  
+
+
+
+  function handleClick(e) {
     var link = e.currentTarget.id
     docs.forEach(element => {
       if (element.frontmatter.slug===link) {
@@ -37,9 +52,10 @@ const Projects = ({ data }) => {
             ))}
           </ul>
         </div>
-        <div className={projects}>
+        <div ref={domRefNode} className={projects}>
 
-        <div dangerouslySetInnerHTML={{__html:selectedDoc}} />;
+           <div dangerouslySetInnerHTML={{__html:selectedDoc}} />;
+
         </div>
       </div>
     </Layout>
