@@ -36,7 +36,6 @@ Options are not mandatory.
 ```
 ```html
 <Table json={json} options={options} />
-
-https://codesandbox.io/s/ynn88nx9x?view=split
+```
 
 https://codesandbox.io/s/mystifying-diffie-qgrpp
