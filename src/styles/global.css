@@ -44,6 +44,26 @@ blockquote {
   float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
+.gatsby-code-button-container {
+  width:1em;
+  position: relative;
+  top:0;
+  right:0;
+  background-color: #610909;
+}
+.gatsby-code-button {
+  background-color: #120961;
+}
+.gatsby-code-button-icon {
+  background-color: #1e6109;
+}
+.gatsby-code-button-toaster {
+  background-color: #450961;
+}
+.gatsby-code-button-toaster-text {
+  background-color: #610909;
+  color:yellow;
+}
 
 .forkme{
   position: absolute;

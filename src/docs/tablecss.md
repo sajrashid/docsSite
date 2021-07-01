@@ -23,7 +23,7 @@ Utility css framewroks like Tailwind add table styles to specific elements.
     cellCss: "break-words  border p-4 ",
     theadCss: "bg-blue-500 text-gray-200 px-8 py-4",
     selectable: true,
-    selectedRowCss: "selectedRow"
+    selectedRowCss: "bg-blue-100"
   }
 
 ```

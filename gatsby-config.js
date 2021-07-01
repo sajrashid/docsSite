@@ -10,7 +10,7 @@
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
+        plugins: [ 
           {
             resolve: `gatsby-remark-embedder`,
             options: {
@@ -50,6 +50,7 @@
               escapeEntities: {},
             },
           },
+          'gatsby-remark-code-buttons'
         ],
       },
     },

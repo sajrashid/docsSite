@@ -20,6 +20,7 @@
     "gatsby-plugin-google-gtag": "^3.8.0",
     "gatsby-plugin-postcss": "^4.8.0",
     "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-remark-code-buttons": "^2.0.7",
     "gatsby-remark-embed-snippet": "^6.5.0",
     "gatsby-remark-embedder": "^5.0.0",
     "gatsby-remark-highlight-code": "^3.0.0",
