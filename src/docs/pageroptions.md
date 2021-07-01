@@ -26,7 +26,7 @@ featuredImg: ../images/featured/shoes-banner.png
 <Table json={json} options={options} />
 ```
 
-https://codesandbox.io/s/icon-custom-columns-dwik5
+https://codesandbox.io/s/damp-waterfall-zb480
 
 ```css
 /* styling the pager would again require passing lots of classes and 
