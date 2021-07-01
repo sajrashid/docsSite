@@ -8,15 +8,13 @@ featuredImg: ../images/featured/skate-banner.png
 ---
 ## Installation
 
-**yarn add react-dj-table**
-
-<br/>
+>yarn add react-dj-table
 
 ### Reference the table
 ```js
 import Table from 'react-dj-table'
 ```
-`Regular array json data, does not require an id, property names can be with, or without quotes.`
+Regular array json data, <b>Id</b> column is not mandatory.
 ### Provide Data
  ```js
     json=[{id:0, name:'snowy',age: 4, desc:'fluffy',isParent:true},
@@ -26,7 +24,7 @@ import Table from 'react-dj-table'
 ```html
 <Table json={json} />
 ```
-`Options are not mandatory to get the table running!`
+Options are not mandatory.
 
 **Options**
  ```js
@@ -38,6 +36,7 @@ import Table from 'react-dj-table'
 ```
 ```html
 <Table json={json} options={options} />
-```
 
-https://codesandbox.io/s/upbeat-keller-sw7p8?file=/index.js
+https://codesandbox.io/s/ynn88nx9x?view=split
+
+https://codesandbox.io/s/mystifying-diffie-qgrpp
