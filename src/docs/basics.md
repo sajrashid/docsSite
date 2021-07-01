@@ -22,7 +22,6 @@ import Table from 'react-dj-table'
 Regular array json data, <b>Id</b> column is not mandatory.
 ### Provide Data
  ```js
-    alert('click to copy 💾');
     json=[{id:0, name:'snowy',age: 4, desc:'fluffy',isParent:true},
           {id:1, name:'felix',age: 2, desc:'tricky',isParent:false}]
 ```
