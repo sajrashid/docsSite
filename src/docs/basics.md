@@ -8,7 +8,7 @@ featuredImg: ../images/featured/skate-banner.png
 ---
 ## Motivation
 
-Sometimes I just want a simple easy start component, might be i'm just prototyping, some are opinionated about the UI or require significant plumbing. Strangley find one was proving a challenge so i created one. This is a minimal table that does all the basics, sorting / paging etc, plugin some Json and you're good to go.
+Sometimes, you just want a simple easy start component. perhaps you're just prototyping. some componenets are opinionated about the UI or require significant plumbing. Finding one was proving a challenge so I created this. A CSS agnostic proper HTML table that does the basics, sorting, paging, has filters etc, plugin some Json and you're good to go.
 
 
 ## Installation
