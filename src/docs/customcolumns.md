@@ -13,18 +13,19 @@ pass icons, change column headings and pass custom HTML and css into the table h
 
 
  ```js
-   options={
-           labelCols:[{'name':'Name'},{'col2':'Column2'}],
-
-           iconCols: [{ 'email': '<i class="envelope icon"></i>Email' },
-                      { 'Avatar': '<i class="id badge icon"></i>Avatar' }],
-
-           // eslint-disable-next-line no-template-curly-in-string
-           customCols: [{ 'Avatar': '<div style="min-height:6em"><img  decoding="async" src=${Avatar}></img></div' }] 
-           //adding min height reduces loading flash as image cells are not resized vertically
-           }
+    options = {
+     //tbale css semantic ui react 
+    tableCss: "ui fixed green table",
+    iconCols: [{ email: '<i class="envelope icon"></i>email' }],
+    customCols: [
+      {
+        Avatar:
+          '<div style="min-height:5em"><img  decoding="async" src=${Avatar}></img></div'
+      }
+    ]
+  };
 ```
 ```html
 <Table json={json} options={options} />
 ```
-https://codesandbox.io/s/ynn88nx9x?view=split
+https://codesandbox.io/s/currying-sunset-dwik5
