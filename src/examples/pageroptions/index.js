@@ -2,16 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Table from "react-dj-table";
 import cars from "./data.json";
+import "semantic-ui-css/semantic.min.css";
+import "./pager.css";
 
 function App() {
   const options = {
-    tableCss: "table-fixed cursor-pointer w-full",
+    pageable: true,
+    pagerCss: "pager",
+    pagSize: 5,
+    tableCss: "ui fixed green table",
+    customCols: [
+      {
+        Avatar:
+          '<div style="min-height:5em"> <img style="height:4em"  decoding="async" src=${Avatar}></img></div'
+      }
+    ]
   };
   return (
     <div className="App">
       <Table json={cars} options={options} />
-      <h1>Well, yeah.</h1>
-      <h2>Start editing to see some magic happen!</h2>
     </div>
   );
 }
