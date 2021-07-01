@@ -50,10 +50,7 @@
   padding:1em;
 }
 
-.projects p {
-  color:#0b172a;
-  margin-top: 4px;
-}
+
 .projects ul  {
 list-style: none;
 padding: 0.3rem;
@@ -75,13 +72,9 @@ margin-bottom: 1.5rem;
   text-align: left;
 }
 .projects h3 {
-text-align: left;
-padding: 0.3rem 1rem 0.3rem 1rem;
-background-color: #e4e4e4;
-min-height: 1rem;
-display: inline;
-border-radius: 0.3rem;
-margin-bottom: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    background-color: #e4e4e4;
+    border-radius: 0.3rem;
 }
 
 .projects  iframe{

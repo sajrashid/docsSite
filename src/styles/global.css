@@ -7,14 +7,48 @@ a { text-decoration: none;}
 #___gatsby #gatsby-focus-wrapper {
   height: 100%;
 }
-p {
-  margin: 16px auto;
-  line-height: 1.5em;
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: #333;
+  border-radius: 0.3em;
+  margin: 2em 0 2em 0;
+  margin-top: 1em;
+  padding: 1em;
+  overflow: auto;
 }
+
+blockquote {
+  margin-left: 0em;
+  border-left: 8px solid #610909;
+  padding: 1em;
+  font-size: 1.4em;
+  box-shadow: 1px 3px 5px #ccc;
+  color: #610909;
+}
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
 .forkme{
   position: absolute;
   right: 0;
-  top:2.6em;
+  top:3.5em;
   z-index: 10;
 }
 
@@ -30,14 +64,14 @@ p {
 nav {
   padding-bottom: 0.5rem;
   margin: 2.2em auto;
- background-color: aqua;
+
 }
 nav .links {
   text-align: right;
   background-color: black;
   float: right;
   position: relative;
-  top: -3em;
+  top: -2.5em;
   height: 2.5em;
   }
 nav a {

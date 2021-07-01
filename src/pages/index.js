@@ -1,6 +1,5 @@
 import 'semantic-ui-css/semantic.min.css'
 
-import Helmet from 'react-helmet'
 import Layout from '../../src/components/layout'
 import { Link } from "gatsby"
 import React from 'react'
