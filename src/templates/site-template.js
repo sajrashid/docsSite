@@ -8,6 +8,13 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
+      {/* <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt || 'nothin’'}
+      image={post.frontmatter.image.childImageSharp.sizes.src}
+      pathname={post.fields.slug}
+      article
+    /> */}
       <div className={details}>
         <div 
          
