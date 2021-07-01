@@ -10,51 +10,31 @@ featuredImg: ../images/featured/drums-banner.png
 ###react-dj-table css
 
 `Outputs a standard css agnostic table.
-the example css belows works with any HTML table element`
+any correct table css styles should work`
 
-**example**
- ```css
-    table {
-  font-family: 'Arial';
-  margin: 25px auto;
-  border-collapse: collapse;
-  border: 1px solid #eee;
-  border-bottom: 2px solid #00cccc;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
-}
-table tr:hover {
-  background: #f4f4f4;
-}
-table tr:hover td {
-  color: #555;
-}
-table th, table td {
-  color: #999;
-  border: 1px solid #eee;
-  padding: 12px 35px;
-  border-collapse: collapse;
-}
-table th {
-  background: #00cccc;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-table th.last {
-  border-right: none;
-}
+see the second example is basics if you want to use standard css
+
+Utility css require adding table styles to specific elements *react-dj-table* supports utility type syntax
+
+**TailWind example**
+ ```js
+
+ const options = {
+    tableCss: "table-fixed cursor-pointer w-full",
+    cellCss: "break-words  border p-4 ",
+    pagerCss: "pager",
+    pageable: true,
+    theadCss: "bg-blue-500 text-gray-200 px-8 py-4",
+    selectable: true,
+    selectedRowCss: "selectedRow"
+  }
 
 ```
 
-```html
-<Table json={json} />
-```
-
-https://codesandbox.io/s/ynn88nx9x?view=split
+https://codesandbox.io/s/testing-forked-meysj
 
 
 see more... https://css-tricks.com/complete-guide-table-element/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ad1de4da-ad86-4c8f-a533-732539d451a7/deploy-status)](https://app.netlify.com/sites/jolly-hodgkin-af839c/deploys)
 
 

@@ -24,18 +24,27 @@ Regular array json data, <b>Id</b> column is not mandatory.
 ```html
 <Table json={json} />
 ```
+
+```html
+<Table json={json} options={options} />
+```
+
+
+
+https://codesandbox.io/s/mystifying-diffie-qgrpp
+
 Options are not mandatory.
 
 **Options**
  ```js
-   options={
-            tableCss:'cssClass',
-            pageable:true, // enable paging
-            selectable:false //row selection default is true
-           }
+  const options = {
+    selectable: true,
+    selectedRowCss: "selectedRow"
+  };
+
 ```
 ```html
 <Table json={json} options={options} />
 ```
 
-https://codesandbox.io/s/mystifying-diffie-qgrpp
+https://codesandbox.io/s/crazy-lehmann-nt9e5
