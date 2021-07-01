@@ -7,14 +7,15 @@ thumb: ../images/thumbs/food.png
 featuredImg: ../images/featured/food-banner.png
 ---
 
-### Customising Columns
+### Custom Columns
 
-pass icons, change column headings and pass custom HTML and css into the table headers, the input is safely sanitised using dompurify.
+ add icons mpodify column headings
+ use customColums to render images, or custom HTML & CSS the input is sanitised using [dompurify](https://github.com/cure53/DOMPurify).
 
 
  ```js
     options = {
-     //tbale css semantic ui react 
+     //table css semantic ui react 
     tableCss: "ui fixed green table",
     iconCols: [{ email: '<i class="envelope icon"></i>email' }],
     customCols: [

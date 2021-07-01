@@ -25,17 +25,11 @@ Regular array json data, <b>Id</b> column is not mandatory.
 <Table json={json} />
 ```
 
-```html
-<Table json={json} options={options} />
-```
-
-
-
 https://codesandbox.io/s/mystifying-diffie-qgrpp
 
-Options are not mandatory.
+### Add Options
+<sub>Options are not mandatory.</sub>
 
-**Options**
  ```js
   const options = {
     selectable: true,

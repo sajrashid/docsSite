@@ -21,8 +21,7 @@ featuredImg: ../images/featured/coffee-banner.png
   }, [])
 
  ```
-see the sandbox for a complete example 
+ 
 
-https://codesandbox.io/s/ynn88nx9x?view=split
+Todo example sandbox
 
-complete example, similar example to the sandbox

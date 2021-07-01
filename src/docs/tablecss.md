@@ -9,14 +9,14 @@ featuredImg: ../images/featured/drums-banner.png
 
 ## CSS
 
-Outputs a standard css agnostic table.
-Works with table css.
+Outputs a proper HTML css agnostic table.
+Works with any standard table css.
 
-<sub>see the second example in basics if you want to use standard css.</sub>
+<sub>standard css example, see the second example in basics.</sub>
 
-Utility css require adding table styles to specific elements *react-dj-table* supports utility type syntax.
+Utility css framewroks like Tailwind add table styles to specific elements.
 
-**TailWind example**
+### TailWind example
  ```js
  const options = {
     tableCss: "table-fixed cursor-pointer w-full",
@@ -30,9 +30,11 @@ Utility css require adding table styles to specific elements *react-dj-table* su
 
 https://codesandbox.io/s/testing-forked-meysj
 
-**Sematic UI React example**
+### Sematic UI React responsive example
 ```js
-   tableCss: "ui fixed red table",
+const options = {
+      tableCss: "ui fixed red table",
+    }
 ```
 https://codesandbox.io/s/basicoptions-forked-ugb9g
 
