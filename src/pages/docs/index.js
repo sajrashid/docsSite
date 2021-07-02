@@ -44,7 +44,7 @@ const Projects = ({ data }) => {
           <ul>
             {docs.map(project => (
               <li key={"li" + project.id}>
-                <span id={project.frontmatter.slug} onClick={handleClick}   tabIndex={0}  role="button"  onKeyDown={handleClick} key={project.id}>
+                <span  id={project.frontmatter.slug} onClick={handleClick}   tabIndex={0}  role="button"  onKeyDown={handleClick} key={project.id}>
                   {project.frontmatter.title}
                 </span>
               </li>
