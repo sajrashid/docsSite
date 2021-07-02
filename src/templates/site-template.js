@@ -34,7 +34,6 @@ query ProjectDetails($slug: String) {
     frontmatter {
       stack
       title
-      htmlAst
     }
   }
 }`
