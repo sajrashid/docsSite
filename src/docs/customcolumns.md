@@ -14,19 +14,22 @@ featuredImg: ../images/featured/food-banner.png
 
 
  ```js
-    options = {
-     //table css semantic ui react 
+    const options = {
+    pageable: true,
+    pagerCss: "pager",
+    pageSize: 5,
     tableCss: "ui fixed green table",
-    iconCols: [{ email: '<i class="envelope icon"></i>email' }],
     customCols: [
       {
         Avatar:
-          '<div style="min-height:5em"><img  decoding="async" src=${Avatar}></img></div'
+          '<div style="min-height:4em"> <img style="height:3em"  decoding="async" src=${Avatar}></img></div'
       }
-    ]
+    ],
+    iconCols: [{ email: '<i class="envelope icon"></i>Email' }],
+    labelCols: [{ last_name: "LastName" }, { gender: "Gender" }]
   };
 ```
 ```html
 <Table json={json} options={options} />
 ```
-https://codesandbox.io/s/currying-sunset-dwik5
+https://codesandbox.io/s/custom-icon-label-columns-hxr8k
