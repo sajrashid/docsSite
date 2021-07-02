@@ -1,15 +1,16 @@
+import "semantic-ui-css/semantic.min.css";
+import "./pager.css";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import Table from "react-dj-table";
 import cars from "./data.json";
-import "semantic-ui-css/semantic.min.css";
-import "./pager.css";
 
 function App() {
   const options = {
     pageable: true,
     pagerCss: "pager",
-    pagSize: 5,
+    pageSize: 5,
     tableCss: "ui fixed green table",
     customCols: [
       {

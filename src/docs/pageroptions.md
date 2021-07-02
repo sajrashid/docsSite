@@ -12,7 +12,7 @@ featuredImg: ../images/featured/shoes-banner.png
   const options = {
     pageable: true,
     pagerCss: "pager",
-    pagSize: 5,
+    pageSize: 5,
     tableCss: "ui fixed green table",
     customCols: [
       {

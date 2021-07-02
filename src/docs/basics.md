@@ -7,16 +7,6 @@ thumb: ../images/thumbs/skate.png
 featuredImg: ../images/featured/skate-banner.png
 ---
 
-```js
-alert('click to copy 💾');
-```
-
-
-## Motivation
-
-Sometimes, you just want a simple easy start component. perhaps you're just prototyping. some componenets are opinionated about the UI or require significant plumbing. Finding one was proving a challenge so I created this. A CSS agnostic proper HTML table that does the basics, sorting, paging, has filters etc, plugin some Json and you're good to go.
-
-
 ## Installation
 
 >yarn add react-dj-table

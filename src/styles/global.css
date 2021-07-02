@@ -142,6 +142,11 @@ footer p{
   margin: 0 auto;
 }
 
+.tablecss table>tbody>tr>td>input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+
 
 .tablecss table>tbody>tr>td>div>img{
 height: 4em;

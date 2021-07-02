@@ -10,10 +10,16 @@ import robots from '../robots.json'
 export default function Home({ data }) {
 
   const options = {
-    iconCols: [{ 'email': '<i class="envelope icon"></i>Email' }],
-    customCols: [{ 'Avatar': '<div style="min-height:5em"><img  decoding="async" src=${Avatar}></img></div' }],
+    iconCols: [{ email: '<i class="envelope icon"></i>Email' }],
+    customCols: [{ Avatar: '<div style="min-height:5em"><img  decoding="async" src=${Avatar}></img></div' }],
     pageable: true,
+    labelCols: [
+      { last_name: "LastName" },
+      { gender: "Gender" },
+  
+  ],
     filters: true,
+    pageSize:5,
     tableCss: 'ui fixed table',
     searchInputCss: 'searchInputCss',
     pagerCss: 'pager',

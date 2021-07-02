@@ -8,17 +8,22 @@ const plugins = [
     },
   },
   {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `data`,
+      path: `${__dirname}/src/docs/`,
+    },
+  },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [`gatsby-remark-purple-headers`],
+    },
+  },
+  {
     resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
-        {
-          resolve: "gatsby-remark-code-buttons",
-          options: {
-            tooltipText: `Copy to clipboard`,
-            toasterText: "Copied to clipboard",
-            toasterDuration: 5000,
-          },
-        },
         {
           resolve: `gatsby-remark-embedder`,
           options: {
@@ -58,7 +63,6 @@ const plugins = [
             escapeEntities: {},
           },
         },
-        
       ],
     },
   },
