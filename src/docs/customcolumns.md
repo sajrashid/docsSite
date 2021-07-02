@@ -9,8 +9,8 @@ featuredImg: ../images/featured/food-banner.png
 
 ### Custom Columns
 
- add icons mpodify column headings
- use customColums to render images, or custom HTML & CSS the input is sanitised using [dompurify](https://github.com/cure53/DOMPurify).
+ Add icons, modify column headings.
+ Use customColums to render images modify cell colours etc. All input is auto sanitised using [dompurify](https://github.com/cure53/DOMPurify).
 
 
  ```js
