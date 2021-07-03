@@ -1,5 +1,5 @@
 ---
-title: Identity Columns
+title: Hidden Columns
 stack: React
 slug: hiddencolumns
 date: 2021-02-01T00:00:00+00:00
