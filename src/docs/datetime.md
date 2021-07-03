@@ -6,17 +6,17 @@ date: 2021-01-01T00:00:00+00:00
 ---
 ### Date Time
 
-Todo Datetime example
+Date in rendered in the browser using the browsers Local date and time zone, you may specify any dateime time options that are supported by 
+<strong>Dateto.LocaleDateString();</strong>
+
+[MDN Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
 
  ```js
- Todo
- var mydate=new Date(dateStr)
-
  const options={
-   dateCols:[{'col1': mydate }]
+    dateCols:['RetiredDate'],
+        dateOptions: { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' },
  }
 
  ```
 
-Todo example sandbox
 
