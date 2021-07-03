@@ -125,6 +125,15 @@ footer p{
 .content p {
   font-size:1.5em;
 }
+
+.examplesBtn{
+ background-color: #0f0;
+ padding: 1em;
+ border-radius: 0.3em;
+ box-shadow: 1px 3px 3px 0 #e2e2e2;
+ color:#333;
+}
+
 .tabletitle{
   padding: 1em;
   background-color: rgb(224, 224, 224);
@@ -145,9 +154,7 @@ footer p{
 .tablecss table>tbody>tr>td>input[type=checkbox] {
   transform: scale(1.5);
 }
-.tablecss table>tbody>tr:hover{
-  background-color: linen;
-}
+
 .tablecss table .rowCss{
   background-color: lightblue;
 }

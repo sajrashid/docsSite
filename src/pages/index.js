@@ -45,7 +45,10 @@ export default function Home({ data }) {
           <small>Responsive standard HTML table</small>
           <p>Tailwind, Bootstrap, Sematic UI examples</p>
           <Link to="/docs" >
+            <span className="examplesBtn"  tabIndex={0}  role="button">
             Live Examples
+            </span>
+            
           </Link>
           <div className="rowData">
 
