@@ -1,7 +1,7 @@
 ---
-title: Quick Start
+title: Identity Columns
 stack: React
-slug: quickstart
+slug: identitycolumns
 date: 2021-02-01T00:00:00+00:00
 ---
 # Quick Start
