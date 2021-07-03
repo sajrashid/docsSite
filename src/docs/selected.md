@@ -5,11 +5,10 @@ slug: selected
 date: 2021-02-01T00:00:00+00:00
 ---
 
-### Row Selection
+# Row Selection
 
 
 ### Add Options
-<sub>Options are not mandatory.</sub>
 
  ```js
   const options = {

@@ -5,12 +5,11 @@ slug: customcolumns
 date: 2021-01-05T00:00:00+00:00
 ---
 
-### Custom Columns
+# Custom Columns
 
- Add icons, modify column headings.
- Use customColums to render images modify cell colours etc. All input is auto sanitised using [dompurify](https://github.com/cure53/DOMPurify).
+ Add icons, modify column headings. Use custom colums to render images, add background colours etc. All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
 
-
+### Custom Column options
  ```js
     const options = {
     pageable: true,

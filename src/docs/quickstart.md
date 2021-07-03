@@ -1,9 +1,10 @@
 ---
-title: Basics
+title: Quick Start
 stack: React
-slug: basics
+slug: quickstart
 date: 2021-02-01T00:00:00+00:00
 ---
+# Quick Start
 
 ## Installation
 

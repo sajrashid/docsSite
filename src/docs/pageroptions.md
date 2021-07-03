@@ -4,8 +4,9 @@ stack: Gatsby & Shopify
 slug: pageroptions
 date: 2021-01-08T00:00:00+00:00
 ---
+# Pager Options
 
-### Add Pager
+### Add Options
  ```js
   const options = {
     pageable: true,
