@@ -19,7 +19,7 @@ export default function Home({ data }) {
       { gender: "Gender" },
 
     ],
-    filters: true,
+    searchable: true,
     pageSize: 5,
     sortable: true,
     selectable: true,
