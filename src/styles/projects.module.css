@@ -91,11 +91,13 @@ margin-bottom: 1.5rem;
   50% { opacity: 0.5 }
 }
 .projects strong{
- position: relative;
- top:0.3rem;
-padding:0.5rem 1rem 0.5rem 1rem;
-background-color: #0b172a;color: #ddd;
-border-radius: 0.3rem;
+  position: relative;
+  top: 0.3rem;
+  padding: 0 0.2em 0 0.2em;
+  background-color: #e3e6ec;
+  color: #333;
+  vertical-align: text-bottom;
+  border-radius: 0.3rem;
 }
 .projects em  {
   position: relative;

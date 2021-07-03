@@ -27,8 +27,8 @@ export default function Home({ data }) {
     searchInputCss: 'searchInputCss',
     tableCss: 'ui fixed table',
     pagerCss: 'pager',
-    dateCols: ['RetiredDate'],
-    dateOptions: { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+    dateCols:[{RetiredDate:'en-GB'}],
+    dateOptions: { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }
   }
 
 
