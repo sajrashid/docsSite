@@ -20,11 +20,19 @@ export default function Home({ data }) {
   ],
     filters: true,
     pageSize:5,
-    tableCss: 'ui fixed table',
+    sortable:true,
+    selectable:true,
+    selectedRowCss:'rowCss',
     searchInputCss: 'searchInputCss',
+    tableCss: 'ui fixed table',
     pagerCss: 'pager',
   }
 
+  
+  const rowClickHandler =(row)=>{
+     console.log(row)
+  }
+ 
   return (
     <Layout>
       <section className={header}>
@@ -33,12 +41,15 @@ export default function Home({ data }) {
           </h2>
           <small>Responsive standard HTML table</small>
           <p>Tailwind, Bootstrap, Sematic UI examples</p>
-          <Link  to="/docs">
+          <Link  to="/docs" >
             Live Examples
           </Link>
+          <div className="rowData">
+            
+          </div>
           <div className="tablecss">
             <div className="tabletitle">Responsive table styled with Sematic UI, resize the browser to see the columns collapse</div>
-            <Table json={robots} options={options} />
+            <Table json={robots} options={options} rowClick={rowClickHandler} />
             <small>"Robots lovingly delivered by Robohash.org" or something.</small>
           </div>
         </div>

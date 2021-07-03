@@ -3,8 +3,6 @@ title: Row Selection
 stack: React
 slug: selected
 date: 2021-02-01T00:00:00+00:00
-thumb: ../images/thumbs/skate.png
-featuredImg: ../images/featured/skate-banner.png
 ---
 
 ### Row Selection

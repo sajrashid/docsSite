@@ -1,10 +1,10 @@
+import { graphql, navigate } from "gatsby"
 import {portfolio, projects, side} from "../../styles/projects.module.css"
 
 import Layout from "../../components/layout"
 import ProjectDetails from '../../templates/site-template'
 import React from "react"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
-import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
   deckDeckGoHighlightElement()
@@ -23,13 +23,17 @@ const Projects = ({ data }) => {
 
     const domRefNode =  React.createRef()
   
+    const activeStyles={
+      // background:'green',
+      // color:'blue'
+    }
 
 
-
-  function handleClick(e) {
+  const handleClick=(e)=> {
     var link = e.currentTarget.id
     docs.forEach(element => {
       if (element.frontmatter.slug===link) {
+      //  navigate('/docs/' +element.frontmatter.slug )
         setSelectedDoc(element.html)
       }
     });
@@ -44,7 +48,7 @@ const Projects = ({ data }) => {
           <ul>
             {docs.map(project => (
               <li key={"li" + project.id}>
-                <span  id={project.frontmatter.slug} onClick={handleClick}   tabIndex={0}  role="button"  onKeyDown={handleClick} key={project.id}>
+                <span style={activeStyles}  id={project.frontmatter.slug} onClick={handleClick}   tabIndex={0}  role="button"  onKeyDown={handleClick} key={project.id}>
                   {project.frontmatter.title}
                 </span>
               </li>

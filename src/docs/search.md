@@ -3,8 +3,6 @@ title: Search & Filter
 stack: Svelte & Firebase
 slug: search
 date: 2021-01-03T00:00:00+00:00
-thumb: ../images/thumbs/gaming.png
-featuredImg: ../images/featured/gaming-banner.png
 ---
 
 ### Fuzzy search 
@@ -17,7 +15,7 @@ featuredImg: ../images/featured/gaming-banner.png
  ```js
    const options = {
         searchInputCss: 'searchInputCss',
-        filters: true,
+        searchable: true,
     }
 ```
 

@@ -146,8 +146,12 @@ footer p{
   transform: scale(1.5);
 }
 
-
-
+.tablecss table .rowCss{
+  background-color: lightblue;
+}
+.rowData {
+  min-height: 1.4em;
+}
 .tablecss table>tbody>tr>td>div>img{
 height: 4em;
 }

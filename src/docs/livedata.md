@@ -3,8 +3,6 @@ title: Live Data
 stack: HTML & CSS
 slug: livedata
 date: 2021-01-01T00:00:00+00:00
-thumb: ../images/thumbs/coffee.png
-featuredImg: ../images/featured/coffee-banner.png
 ---
 ### Fetch Data
 

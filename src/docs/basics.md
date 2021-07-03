@@ -3,8 +3,6 @@ title: Basics
 stack: React
 slug: basics
 date: 2021-02-01T00:00:00+00:00
-thumb: ../images/thumbs/skate.png
-featuredImg: ../images/featured/skate-banner.png
 ---
 
 ## Installation
@@ -34,6 +32,7 @@ https://codesandbox.io/s/mystifying-diffie-qgrpp
  ```js
   
   const options = {
+    sortable:true,
     selectable: true,
     selectedRowCss: "selectedRow"
   };
