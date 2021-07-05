@@ -32,6 +32,8 @@ query ProjectDetails($slug: String) {
   markdownRemark(frontmatter: {slug: {eq: $slug}}) {
     html
     frontmatter {
+      path
+      type
       stack
       title
     }

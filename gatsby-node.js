@@ -1,5 +1,6 @@
 const path = require(`path`)
 
+const siteTemplate=path.resolve('src/templates/site-template.js')
 exports.onCreateWebpackConfig = ({
   stage,
   rules,
@@ -38,6 +39,8 @@ exports.createPages = async ({ graphql, actions }) => {
         nodes {
           frontmatter {
             slug
+            path
+            type
           }
         }
       }

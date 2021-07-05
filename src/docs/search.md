@@ -1,4 +1,6 @@
 ---
+path: "/docs/search"
+type: "search"
 title: Search & Filter
 stack: Svelte & Firebase
 slug: search
