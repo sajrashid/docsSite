@@ -24,7 +24,10 @@ body {
   height: 100%;width:100%;
 }
 .home a {
-  color:var(--lime)!important;
+  color:black!important;
+  background-color:var(--lime);
+  padding:0.1em 0.6em 0.1em 0.6em;
+  border-radius: 0.3em;
 }
 #framesandbox{
   margin-top: 1em;
