@@ -20,7 +20,8 @@
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
-
+     <a class="giticon" href="https://github.com/sajrashid/React-Dynamic-Json-Table"> <img alt="git icon" src="../../img/git.png"/> </a> 
+     
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
