@@ -1,0 +1,22 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{% set maxPosts = collections.posts.length | min(3) %}
+<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+<p>Doc's & Examples here <a href="{{ '/docs/' | url }}">Link</a>.</p>
+<div class="example">
+<iframe title="main example" src="https://codesandbox.io/embed/full-example-sematic-ui-pageable-searchable-v151w?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:800px; border:0; border-radius: 4px; overflow:hidden;"
+     title="full example sematic ui pageable searchable"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+</div>
