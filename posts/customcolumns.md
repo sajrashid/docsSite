@@ -9,9 +9,7 @@ tags:
   - Custom HTML
 layout: layouts/post.njk
 ---
-# Custom Columns
-
- Add icons, modify column headings. Use custom colums to render images, add background colours etc. All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
+ Use custom colums to render images, add background colours etc. All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
 
 ### Custom Column options
  ```js

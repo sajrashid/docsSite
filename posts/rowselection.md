@@ -9,9 +9,6 @@ tags:
 layout: layouts/post.njk
 ---
 
-# Row Selection
-
-
 ### Add Options
 
  ```js

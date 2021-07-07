@@ -8,8 +8,6 @@ tags:
   - Pagination
 layout: layouts/post.njk
 ---
-# Pager Options
-
 ### Add Options
  ```js
     const options = {

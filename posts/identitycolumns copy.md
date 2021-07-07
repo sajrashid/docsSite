@@ -8,21 +8,14 @@ tags:
 layout: layouts/post.njk
 ---
 
-https://codesandbox.io/s/mystifying-diffie-qgrpp
-
-### Add Options
-<sub>Options are not mandatory.</sub>
+### Identity Column options
 
  ```js
     const options = {
-    sortable:true,
-    selectable: true,
-    selectedRowCss: "selectedRow"
+    idCol:"email",
     };
 
 ```
 ```html
    <Table json={json} options={options} />
 ```
-
-https://codesandbox.io/s/crazy-lehmann-nt9e5

@@ -8,11 +8,10 @@ tags:
   - Columns 
 layout: layouts/post.njk
 ---
-# Label Columns
 
 Use label colums to individually control the column titles, if you need to change case on all your colums use css <strong>text-transform</strong>
 
-### Custom Column options
+### Label Column options
  ```js
     const options = {
     labelCols: [{ last_name: "LastName" }, { gender: "Gender" }]
