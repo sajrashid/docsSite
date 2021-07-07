@@ -10,13 +10,41 @@ eleventyNavigation:
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
+<script>
+  var src="https://codesandbox.io/embed/full-example-sematic-ui-pageable-searchable-v151w?fontsize=14&hidenavigation=1&theme=dark"
+function onMyFrameLoad() {
+   var b = document.getElementById("iframebtn");
+   b.innerText="Toggle CodeSandbox";
+};
 
+function showSandBox(){
+ var e = document.getElementById("framesandbox");
+ var frame = document.getElementById("frame");
+  var b = document.getElementById("iframebtn");
+ frame.src=src;
+ if (e.style.display === "none") {
+    e.style.display = "block";
+   b.innerText="Loading ......................";
+
+  } else {
+    e.style.display = "none";
+    b.innerText="Toggle CodeSandbox";
+  }
+}
+
+</script>
 <p>Doc's & Examples here <a href="{{ '/docs/' | url }}">Link</a>.</p>
-<div class="example">
-<iframe title="main example" src="https://codesandbox.io/embed/full-example-sematic-ui-pageable-searchable-v151w?fontsize=14&hidenavigation=1&theme=dark"
+<div class="example" >
+<span class="btnspan">
+<button id="iframebtn" onclick="showSandBox()">Toggle CodeSandbox
+  </button>
+</span>
+<div id="framesandbox" style="display:none;" >
+  <iframe id="frame" onload="onMyFrameLoad(this)" title="main example" src=""
      style="width:100%; height:800px; border:0; border-radius: 4px; overflow:hidden;"
      title="full example sematic ui pageable searchable"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+ ></iframe>
+</div>
 </div>

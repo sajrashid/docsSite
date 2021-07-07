@@ -26,6 +26,27 @@ body {
 .home a {
   color:var(--lime)!important;
 }
+#framesandbox{
+  margin-top: 1em;
+}
+#iframebtn {
+  border:none;
+  cursor: pointer;
+  line-height: 1em;
+  background-color:var(--blue);
+  padding: 0.7em;
+  font-weight: bold;
+  color:var(--white);
+  border-radius: 0.3em;
+  box-shadow: 1px 3px 5px #333;
+}
+
+.codesvg{
+  height: 1em;
+  width: 1em;
+  margin-left:1em
+
+}
 blockquote{
   font-size: 1.8em;
   border-left: 8px solid #333;
