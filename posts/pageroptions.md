@@ -6,7 +6,7 @@ date: 2021-01-08T00:00:00+00:00
 tags:
   - Pager
   - Pagination
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 ### Add Options
  ```js

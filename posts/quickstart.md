@@ -7,7 +7,7 @@ tags:
   - Install
   - QuickStart
   - JSON
-layout: layouts/post.njk
+layout: layouts/doc.njk
 eleventyNavigation:
     key: QuickStart
 order: 1

@@ -8,7 +8,7 @@ tags:
   - Columns 
   - Custom HTML
   - ICONS
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 
 ### Icon Column options

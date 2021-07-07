@@ -21,7 +21,10 @@ body {
   font-family: -apple-system, system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
-  height: 100%;width:100%;
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .home a {
   color:black!important;
@@ -85,12 +88,12 @@ p:last-child {
   margin-bottom: 0;
 }
 p,
-.tmpl-post li,
+.tmpl-doc li,
 img {
   max-width: 37.5em; /* 600px /16 */
 }
 p,
-.tmpl-post li {
+.tmpl-doc li {
   line-height: 1.45;
 }
 a[href] {
@@ -101,7 +104,7 @@ a[href]:visited {
 }
 main {
   padding: 1rem;
-  height: 80%;width: 100%;
+  width: 100%;
 }
 main :first-child {
   margin-top: 0;
@@ -117,10 +120,9 @@ header:after {
 footer{
 padding: 2em;
 opacity: 0.8;
+margin-top: auto;
 }
-footer a{
-   color: red!important;
-}
+
 table {
   margin: 1em 0;
  
@@ -218,51 +220,51 @@ code {
   text-decoration: underline;
 }
 
-/* Posts list */
-.postlist {
+/* docs list */
+.doclist {
   list-style: none;
   padding: 0;
 }
-.postlist-item {
+.doclist-item {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   counter-increment: start-from -1;
   line-height: 1.8;
 }
-.postlist-item:before {
+.doclist-item:before {
   display: inline-block;
   pointer-events: none;
   content: "" counter(start-from, decimal-leading-zero) ". ";
   line-height: 100%;
   text-align: right;
 }
-.postlist-date,
-.postlist-item:before {
+.doclist-date,
+.doclist-item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--darkgray);
 }
-.postlist-date {
+.doclist-date {
   word-spacing: -0.5px;
 }
-.postlist-link {
+.doclist-link {
   padding-left: .25em;
   padding-right: .25em;
   text-underline-position: from-font;
   text-underline-offset: 0;
   text-decoration-thickness: 1px;
 }
-.postlist-item-active .postlist-link {
+.doclist-item-active .doclist-link {
   font-weight: bold;
 }
-.tmpl-home .postlist-link {
+.tmpl-home .doclist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
 
 
 /* Tags */
-.post-tag {
+.doc-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -276,15 +278,15 @@ code {
   text-decoration: none;
   line-height: 1.8;
 }
-a[href].post-tag,
-a[href].post-tag:visited {
+a[href].doc-tag,
+a[href].doc-tag:visited {
   color: inherit;
 }
-a[href].post-tag:hover,
-a[href].post-tag:focus {
+a[href].doc-tag:hover,
+a[href].doc-tag:focus {
   background-color: var(--lightgray);
 }
-.postlist-item > .post-tag {
+.doclist-item > .doc-tag {
   align-self: center;
 }
 

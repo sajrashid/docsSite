@@ -1,7 +1,7 @@
 ---
-layout: layouts/post.njk
+layout: layouts/doc.njk
 title: API Reference
-templateClass: tmpl-post
+templateClass: tmpl-doc
 eleventyNavigation:
   key: API Reference
   order: 3

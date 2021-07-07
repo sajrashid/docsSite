@@ -4,12 +4,12 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Doc's{% endif %}</h1>
+{% set maxdocs = collections.docs.length | min(3) %}
+<h1>Latest {% if maxdocs == 1 %}doc{% else %}{{ maxdocs }} docs{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+{% set docslist = collections.docs | head(-3) %}
+{% set docslistCounter = collections.docs | length %}
+{% include "docslist.njk" %}
 
 <script>
 var src="https://codesandbox.io/embed/full-example-sematic-ui-pageable-searchable-v151w?fontsize=14&hidenavigation=1&theme=dark"

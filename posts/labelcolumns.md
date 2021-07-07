@@ -6,7 +6,7 @@ tags:
   - LABELS 
   - Customisation
   - Columns 
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 
 Use label colums to individually control the column titles, if you need to change case on all your colums use css <strong>text-transform</strong>

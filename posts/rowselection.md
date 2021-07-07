@@ -6,7 +6,7 @@ tags:
   - Row
   - Select
   - Selection
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 
 ### Add Options

@@ -5,7 +5,7 @@ date: 2021-06-06T00:00:00+00:00
 tags:
   - Identity
   - Columns
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 
 ### Identity Column options

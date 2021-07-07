@@ -1,0 +1,12 @@
+<ol reversed class="doclist" style="counter-reset: start-from {{ (docslistCounter or docslist.length) + 1 }}">
+{% for doc in docslist | reverse %}
+  <li class="doclist-item{% if doc.url == url %} doclist-item-active{% endif %}">
+    <a href="{{ doc.url | url }}" class="doclist-link">{% if doc.data.title %}{{ doc.data.title }}{% else %}<code>{{ doc.url }}</code>{% endif %}</a>
+    <time class="doclist-date" datetime="{{ doc.date | htmlDateString }}">{{ doc.date | readableDate }}</time>
+    {% for tag in doc.data.tags | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="doc-tag">{{ tag }}</a>
+    {% endfor %}
+  </li>
+{% endfor %}
+</ol>

@@ -5,7 +5,7 @@ date: 2021-01-01T00:00:00+00:00
 tags:
   - Live Data
   - Data
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 ### Fetch Data
 
@@ -13,7 +13,7 @@ layout: layouts/post.njk
     const [json, setJson] = useState([])
     useEffect(() => {
         async function fetchAPI() {
-            const url = 'https://jsonplaceholder.typicode.com/posts'
+            const url = 'https://jsonplaceholder.typicode.com/docs'
             const response = await fetch(url)
             const json = await response.json()
             setJson(json)

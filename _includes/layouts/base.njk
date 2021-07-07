@@ -36,7 +36,7 @@
       {% for tag in collections.tagList %}
 {{ tag | log }}
   {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+  <a href="{{ tagUrl | url }}" class="doc-tag">{{ tag }}</a>
 {% endfor %}
     </footer>
     <!-- Current page: {{ page.url | url }} -->

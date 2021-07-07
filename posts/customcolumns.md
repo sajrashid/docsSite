@@ -7,7 +7,7 @@ tags:
   - Customisation
   - Columns 
   - Custom HTML
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
  Use custom colums to render images, add background colours etc. All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
 

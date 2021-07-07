@@ -7,7 +7,7 @@ tags:
   - Tailwind
   - Semantic UI React 
   - Bootstrap
-layout: layouts/post.njk
+layout: layouts/doc.njk
 ---
 
 Outputs a semantically correct, css agnostic HTML  table.
