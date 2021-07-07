@@ -10,11 +10,8 @@ tags:
   - ICONS
 layout: layouts/post.njk
 ---
-# Custom Columns
 
-  All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
-
-### Custom Column options
+### Icon Column options
  ```js
     const options = {
     tableCss: "ui fixed green table",

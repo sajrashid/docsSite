@@ -7,10 +7,6 @@ tags:
   - Data
 layout: layouts/post.njk
 ---
-
-
-# Live Data
-
 ### Fetch Data
 
  ```js

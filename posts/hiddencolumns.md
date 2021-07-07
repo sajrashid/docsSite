@@ -7,11 +7,7 @@ tags:
   - Hidden
 layout: layouts/post.njk
 ---
-# Hidden Colums
-
-
-### Add Options
-<sub>Options are not mandatory.</sub>
+### Hidden Column options
 
  ```js
     const options = {

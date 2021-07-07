@@ -8,11 +8,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-
-# Search & Filter
-
 ## Fuzzy search
-Search supports complex filter options & rules, on a per column basis or globally (all columns). If <strong>filterOptions</strong> are not specfied all columns are searched.
 
 ### Filter options 
 

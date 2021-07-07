@@ -7,14 +7,12 @@ tags:
   - HTML
 layout: layouts/post.njk
 ---
-# Footer 
-
-### footer example
+### Footer example
  ```js
    const options = {
    footer: "<div class=''myfooterClass>footer</div>",
     ....
-   }
+ }
 
 ```
 https://codesandbox.io/s/full-example-sematic-ui-pageable-searchable-v151w?from-embed=&file=/index.js
