@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: API Reference
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: API Reference
   order: 3
 ---
 
-I am a person that writes stuff.
+To-do add JS docs API ref
