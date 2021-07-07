@@ -1,7 +1,5 @@
 ---
 title: Quick Start
-stack: React
-slug: quickstart
 date: 2021-02-01T00:00:00+00:00
 ---
 # Quick Start
@@ -12,7 +10,7 @@ date: 2021-02-01T00:00:00+00:00
 
 ### Reference the table
 ```js
-import Table from 'react-dj-table'
+   import Table from 'react-dj-table'
 ```
 The table expects an array of JSON objects, nothing special just regular tabular json.
 
