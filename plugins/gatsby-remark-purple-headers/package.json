@@ -1,9 +1,0 @@
-{
-  "name": "gatsby-remark-purple-headers",
-  "version": "0.1",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "unist-util-visit": "2.0.3"
-  }
-}
