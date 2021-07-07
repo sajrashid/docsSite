@@ -29,14 +29,30 @@ body {
   padding:0.1em 0.6em 0.1em 0.6em;
   border-radius: 0.3em;
 }
-.giticon{
+.icons{
   float:right;
   margin-right: 1em;
   margin-top: 0.5em;
+  opacity: 0.7;
+  min-height: 2em;
+}
+.icons a {
+  min-height: 2em;
+  min-width: 2em;
 }
 .giticon >img {
   padding: 0.4em;
   height: 3em;
+  min-height: 3em;
+  min-width: 3em;
+}
+.npm{
+  max-height: 2em;
+  position: relative;
+  top: -0.4em;
+  height: 2em;
+  min-height: 3em;
+  min-width: 3em;
 }
 #framesandbox{
   margin-top: 1em;
