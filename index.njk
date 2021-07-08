@@ -10,7 +10,14 @@ eleventyNavigation:
 {% set docslist = collections.docs | head(-3) %}
 {% set docslistCounter = collections.docs | length %}
 {% include "docslist.njk" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-VH5QPKZ3LS');
+</script>
 <script>
 var src="https://codesandbox.io/embed/full-example-sematic-ui-pageable-searchable-v151w?fontsize=14&hidenavigation=1&theme=dark"
 
