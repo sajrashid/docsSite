@@ -4,10 +4,10 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{% set maxdocs = collections.docs.length | min(3) %}
-<h1>Latest {% if maxdocs == 1 %}doc{% else %}{{ maxdocs }} docs{% endif %}</h1>
+{% set maxdocs = collections.docs.length | min(5) %}
+<h1>Top {% if maxdocs == 1 %}doc{% else %}{{ maxdocs }} docs{% endif %}</h1>
 
-{% set docslist = collections.docs | head(-3) %}
+{% set docslist = collections.docs | head(-5) %}
 {% set docslistCounter = collections.docs | length %}
 {% include "docslist.njk" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>

@@ -27,9 +27,7 @@ Todo add debounce example
 ### Dates
 The table does not attempt to infer dates as JSON dates are strings and not date types, altough parsing a date type is perfectly valid, the performance loss is not inconsequental. All date columns should be specified with the<strong> isDateCols</strong> option 
 
-The following example contains 5 columns with 10'000 row the id column is hidden
-
-See the example, don't forget this is running on a very low powered free sandbox and there is no notice perfoormance degradation
+The following example contains 5 columns with 10'000 row the id column is hidden, nb: this is running on a  low powered sandbox, is there is any noticeable performance degradation ? 
 
 https://codesandbox.io/s/10000-row-example-npxvq
 

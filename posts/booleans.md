@@ -1,7 +1,7 @@
 ---
 title: Booleans
 description: intallation & simple examples
-date: 2021-06-03T00:00:00+00:00
+date: 2021-11-03T00:00:00+00:00
 tags:
   - Checkbox
   - Boolean
