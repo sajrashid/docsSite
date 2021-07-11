@@ -7,12 +7,16 @@ tags:
   - Columns
 layout: layouts/doc.njk
 ---
+## NOTE
+Although identity columns are not required, where there is non uniquedata underdesiable behaviour may be caused, row selection will cause duplicate rows to be selected for example. Specifiying a identity column will also help with performance.
+
+<code>Where possible identity columns should be an numerical json type.</code>
 
 ### Identity Column options
 
  ```js
     const options = {
-    idCol:"email",
+    idCol:"userid",
     };
 
 ```
