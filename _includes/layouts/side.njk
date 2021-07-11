@@ -1,0 +1,9 @@
+  <div class="side">
+        <ul>
+          {%- for doc in collections.docs | sortByOrder -%}
+            <li>
+              <a href="{{ doc.url }}">{{ doc.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+  </div>

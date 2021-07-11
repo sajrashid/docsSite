@@ -2,16 +2,40 @@
 layout: layouts/base.njk
 templateClass: tmpl-doc
 ---
-<h1>{{ title }}</h1>
-
+<h1 class="docsH1">{{ title }}</h1>
+<div class="topDocs">
 <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 {%- for tag in tags | filterTagList -%}
 {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
 <a href="{{ tagUrl | url }}" class="doc-tag">{{ tag }}</a>
 {%- endfor %}
-
+ </div>
+<div class="side">
+        <ul id="sideLi">
+          {%- for doc in collections.docs | sortByOrder -%}
+            <li>
+              <a href="{{ doc.url }}">{{ doc.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      <script>
+        var c= document.getElementById("sideLi").childNodes;
+        var title=document.getElementsByTagName("h1")[1].innerText;
+        c.forEach(function(li){
+         var a = li.firstChild.nextElementSibling.innerText;
+        
+        if(title==a){
+         console.log(a);
+          li.firstChild.nextElementSibling.classList.add("active");
+        
+        }
+        });
+       </script>
+<div class="markdownContent">
 {{ content | safe }}
-
+</div>
+<div class="docspager">
 {%- set nextdoc = collections.docs | getNextCollectionItem(page) %}
 {%- set previousdoc = collections.docs | getPreviousCollectionItem(page) %}
 {%- if nextdoc or previousdoc %}
@@ -21,3 +45,6 @@ templateClass: tmpl-doc
   {%- if previousdoc %}<li>Previous: <a href="{{ previousdoc.url | url }}">{{ previousdoc.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
+</div>
+
+

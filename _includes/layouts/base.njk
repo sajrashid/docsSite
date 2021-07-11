@@ -29,15 +29,17 @@
         </a>
       </span>
     </header>
+   
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
+     
       {{ content | safe }}
     </main>
     <footer>
       {% for tag in collections.tagList %}
-{{ tag | log }}
-  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="doc-tag">{{ tag }}</a>
-{% endfor %}
+        {{ tag | log }}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="doc-tag">{{ tag }}</a>
+      {% endfor %}
     </footer>
     <!-- Current page: {{ page.url | url }} -->
   </body>

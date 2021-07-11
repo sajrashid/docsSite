@@ -9,7 +9,12 @@ eleventyNavigation:
 
 {% set docslist = collections.docs | head(-5) %}
 {% set docslistCounter = collections.docs | length %}
+
+
 {% include "docslist.njk" %}
+
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

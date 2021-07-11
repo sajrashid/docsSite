@@ -104,10 +104,65 @@ a[href]:visited {
 }
 main {
   padding: 1rem;
-  width: 100%;
+  float: left;
+  height:100%;
+  width:100%;
+  float: left;
+}
+.docsH1{
+  text-align: center;
+  width:80%;
+  float: right;
 }
 main :first-child {
   margin-top: 0;
+}
+.side{
+  width:20%;
+  left: 0;
+  height:100%;
+  width:20%;
+  float: left;
+  padding: 1em;
+}
+.side >ul{
+  list-style: none;
+  margin-left: -1em;
+}
+.side >ul>li{
+  padding-bottom: 0.5em;
+}
+.side >ul>li>a{
+  text-decoration: none;
+}
+
+.side >ul>li .active {
+  text-decoration: underline;
+}
+
+
+.side >ul>li>a:hover{
+  border-bottom: solid 1px var(--lime);
+}
+
+
+
+
+
+.topDocs {
+  float: right;
+  width:80%;
+  padding-left: 1em;
+}
+.markdownContent {
+  float: left;
+  width:80%;
+  padding: 1em;
+}
+.docspager{
+  float: right;
+  width:80%;
+  padding-left: 1em;
 }
 header {
   border-bottom: 1px dashed var(--lightgray);

@@ -1,7 +1,7 @@
 ---
 title: Identity Columns
 description: intallation & simple examples
-date: 2021-11-06T00:00:00+00:00
+date: 2020-05-06T00:00:00+00:00
 tags:
   - Identity
   - Columns

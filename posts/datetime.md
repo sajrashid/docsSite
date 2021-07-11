@@ -1,7 +1,7 @@
 ---
 title: Date & Time
 description: examples with various css framework
-date: 2021-06-06T00:00:00+00:00
+date: 2020-11-06T00:00:00+00:00
 tags:
   - DateTime
   - Date

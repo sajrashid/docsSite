@@ -1,13 +1,14 @@
 ---
 title: Custom Columns
 description: examples with various css framework
-date: 2021-06-01
+date: 2020-08-01
 tags:
   - Custom 
   - Customisation
   - Columns 
   - Custom HTML
 layout: layouts/doc.njk
+sortName: Custom
 ---
  Use custom colums to render images, add background colours etc. All input is auto sanitised using <strong>[dompurify](https://github.com/cure53/DOMPurify)</strong>. 
 

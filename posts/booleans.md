@@ -1,16 +1,17 @@
 ---
-title: Booleans
+title: Booleans Columns
 description: intallation & simple examples
-date: 2021-11-03T00:00:00+00:00
+date: 2020-08-04T00:00:00+00:00
 tags:
   - Checkbox
   - Boolean
   - Columns
   - Types
 layout: layouts/doc.njk
+sortName: Booleans
 ---
 
-## Checkbox
+## Booleans & Checkbox
 
 ###  General 
 

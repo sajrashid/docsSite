@@ -1,13 +1,14 @@
 ---
 title: CSS.
 description: examples with various css framework
-date: 2021-06-05T00:00:00+00:00
+date: 2020-02-05T00:00:00+00:00
 tags:
   - CSS
   - Tailwind
   - Semantic UI React 
   - Bootstrap
 layout: layouts/doc.njk
+sortName: CSS
 ---
 
 Outputs a semantically correct, css agnostic HTML  table.

@@ -1,7 +1,7 @@
 ---
 title: Row Selection
 description: intallation & simple examples
-date: 2021-06-03T00:00:00+00:00
+date: 2020-03-03T00:00:00+00:00
 tags:
   - Row
   - Select
