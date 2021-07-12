@@ -14,7 +14,6 @@ layout: layouts/doc.njk
 ### Icon Column options
  ```js
     const options = {
-    tableCss: "ui fixed green table",
     iconCols: [{ email: '<i class="envelope icon"></i>Email' }]
    
    };

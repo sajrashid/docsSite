@@ -14,13 +14,6 @@ layout: layouts/doc.njk
       pageable: true,
       pagerCss: "pager",
       pageSize: 5,
-      tableCss: "ui fixed green table",
-      customCols: [
-        {
-          Avatar:
-            '<div style="min-height:5em"> <img style="height:4em"  decoding="async" src=${Avatar}></img></div'
-        }
-      ]
     };
 ```
 ```html

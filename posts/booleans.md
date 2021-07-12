@@ -13,10 +13,12 @@ sortName: Booleans
 
 ## Booleans & Checkbox
 
-###  General 
+Boolean type are rendered as checkboxes automatically, specifying **checkBox:false** tells the table to render the value as a string 
 
-Boolean type are rendered as checkboxes automatically, specifying **isCheckBox['colname']:false** tells the table to render the value as a string 
-
+## Options
+```js
+  const options = {checkBox: false}
+```
 <sub>release 1.1 to include addtional boolean Column options to reduce reflection</sub>
 
 

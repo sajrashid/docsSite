@@ -15,18 +15,12 @@ sortName: Custom
 ### Custom Column options
  ```js
     const options = {
-    pageable: true,
-    pagerCss: "pager",
-    pageSize: 5,
-    tableCss: "ui fixed green table",
     customCols: [
       {
         Avatar:
           '<div style="min-height:4em"> <img style="height:3em"  decoding="async" src=${Avatar}></img></div'
       }
-    ],
-    iconCols: [{ email: '<i class="envelope icon"></i>Email' }],
-    labelCols: [{ last_name: "LastName" }, { gender: "Gender" }]
+    ]
    };
 ```
 ```html
