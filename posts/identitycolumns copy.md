@@ -25,5 +25,5 @@ The first column [0] is assumed to be the identity column unless specified using
 ```html
    <Table json={json} options={options} />
 ```
-<code>Identity columns, can be removed from the UI, see [Hidden Columns](/posts/hiddencolumns/)</code>
+<sub>Identity columns, can be removed from the UI, see [Hidden Columns](/posts/hiddencolumns/)</sub>
  

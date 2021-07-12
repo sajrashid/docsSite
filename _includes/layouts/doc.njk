@@ -55,8 +55,10 @@ var styleSheetWrapperEl = document.getElementById('markdownContent');
 styleSheetWrapperEl.addEventListener('click', function (e) {
   if (e.target.className === 'language-js' || e.target.className === 'language-html' ){
   var element = e.target;
-   flashElement(element);
-  copyText(element);
+    if (element.nodeName==="CODE") {
+      flashElement(element);
+      copyText(element);
+    }
   };
 });
  

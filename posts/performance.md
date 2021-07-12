@@ -20,7 +20,7 @@ In practice the size of your dataset introduces limitations ie:- filtering large
 
 Specifying the column types such as **booleans** and especially <strong>identity columns</strong>, are likely to help with performance.
 
-<code>sever side paging will be implented in a future release</code>
+<sub>sever side paging will be implented in a future release</sub>
 
 ### Search filtering
 on large volume data sets a debounce should be added to the search as the ui may feel sticky while the dataset is filtered
