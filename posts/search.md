@@ -12,7 +12,7 @@ layout: layouts/doc.njk
 
 ### Filter options 
 
-`supports multi keywords`
+<sub>supports multi keywords</sub>
 
 **Usage**
  ```js

@@ -14,7 +14,7 @@ layout: layouts/doc.njk
 
 Please raise any issues you have at Github [Issue Trackers](https://github.com/sajrashid/React-Dynamic-Json-Table/issues/19)
  
-<code>Feel free to submit a PR for changes or additions</code>
+<sub>Feel free to submit a PR for changes or additions</sub>
 
 
 
