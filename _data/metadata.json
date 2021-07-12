@@ -2,7 +2,7 @@
   "title": "react-dj-table",
   "url": "https://example.com/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "react dynamic json table, with sorting & paging, css agnostic with Tailwind live examples & icons.",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
