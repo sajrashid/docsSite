@@ -7,7 +7,8 @@ tags:
   - Customisation
   - Columns 
   - Custom HTML
-  - ICONS
+  - SVG
+  - IMAGES
 layout: layouts/doc.njk
 ---
 
