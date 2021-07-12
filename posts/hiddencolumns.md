@@ -7,11 +7,14 @@ tags:
   - Hidden
 layout: layouts/doc.njk
 ---
+## Note
+It is best practice to hide columns like id, hidden columns are completely removed from the UI.
+
 ### Hidden Column options
 
  ```js
     const options = {
-    hiddenCols:['col1','col2']
+    hiddenCols:['id','col2']
    };
 
 ```

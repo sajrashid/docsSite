@@ -23,12 +23,15 @@ order: 1
 ```
 The table expects an array of JSON objects, nothing special just regular tabular json.
 
-<sub>Id columns are not required, **although strongly advised**</sub>
+<sub>Id columns are not required, **although  advised**</sub>
 
 ### Provide Data
  ```js
-    json=[{id:0, name:'snowy',age: 4, desc:'fluffy',isParent:true},
-          {id:1, name:'felix',age: 2, desc:'tricky',isParent:false}]
+   const json = [
+     { Name: "Tye", Email: "ttorr0@ucoz.com", IsRetired: true, Department: "Marketing"},
+     { Name: "Marna", Email: "mverbeke1@admin.ch", IsRetired: false, Department: "Business Development"},
+     { Name: "Becca", Email: "bboddie2@clickbank.net", IsRetired: true, Department: "Accounting"}
+  ];
 ```
 ### Add Table Component
 ```html

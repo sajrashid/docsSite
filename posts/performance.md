@@ -16,7 +16,7 @@ layout: layouts/doc.njk
 
 The table is easily able to render and page ten of thousands of rows, however there is a cost to rendering data types dynamically. The cost of reflection increases proportianally with the size of your dataset.
 
-In practice the size of your dataset introduces limitations ie:- filtering larger datasets just takes longer
+In practice the size of your dataset introduces limitations ie:- filtering larger datasets just takes longer.
 
 Specifying the column types such as **booleans** and especially <strong>identity columns</strong>, are likely to help with performance.
 
@@ -28,7 +28,7 @@ on large volume data sets a debounce should be added to the search as the ui may
 Todo add debounce example
 
 ### Dates
-The table does not attempt to infer dates as JSON dates are strings and not date types, altough parsing a date type is perfectly valid, the performance loss is not inconsequental. All date columns should be specified with the<strong> isDateCols</strong> option, or they will be rendered as strings.
+The table does not attempt to infer dates, as JSON dates are strings and not date types. Although parsing a date type is perfectly valid, the performance loss is not inconsequental. As such date columns should be specified with the<strong> isDateCols</strong> option, or they will be treated as strings.
 
 The example below contains 5 columns with 10,000 rows the id column is hidden, nb: this is running on a low powered sandbox, is there is any noticeable performance degradation ? 
 

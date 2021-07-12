@@ -8,11 +8,11 @@ tags:
 layout: layouts/doc.njk
 ---
 ## NOTE
-Although identity columns are not required, where there is non duplicate data, undesiable behaviour may be caused. For example row selection will cause duplicate rows to be selected. **It is strongly advised to include an identity column**.
+Although identity columns are not required, where there is non duplicate data, undesiable behaviour may be caused. For example row selection will cause duplicate rows to be selected. **It is advisable to include an identity column**.
 
 The first column [0] is assumed to be the identity column unless specified using **idCol**.
 
-<code>Where possible identity columns should be a numerical json type.</code>
+<sub>Where possible identity columns should be a numerical json type.</sub>
 
 ### Identity Column options
 
@@ -25,3 +25,5 @@ The first column [0] is assumed to be the identity column unless specified using
 ```html
    <Table json={json} options={options} />
 ```
+<code>Identity columns, can be removed from the UI, see [Hidden Columns](/posts/hiddencolumns/)</code>
+ 
