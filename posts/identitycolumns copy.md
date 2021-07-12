@@ -8,7 +8,7 @@ tags:
 layout: layouts/doc.njk
 ---
 ## NOTE
-Although identity columns are not required, where there is non duplicate data, undesiable behaviour may be caused. For example row selection will cause duplicate rows to be selected. **It is advisable to include an identity column**.
+Although identity columns are not required, where there is  duplicate data, undesirable behaviour may result. For example row selection will cause duplicate rows to be selected. **It is advisable to include an identity column**.
 
 The first column [0] is assumed to be the identity column unless specified using **idCol**.
 
