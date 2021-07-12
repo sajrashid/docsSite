@@ -7,6 +7,8 @@ tags:
   - HTML
 layout: layouts/doc.njk
 ---
+A Table footer can be displayed with any specfied CSS/HTML
+
 ### Footer example
  ```js
    const options = {

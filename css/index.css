@@ -14,15 +14,20 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body{
   padding: 0;
   margin: 0;
   font-family: -apple-system, system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
   width:100%;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -61,16 +66,23 @@ body {
   margin-top: 1em;
 }
 #iframebtn {
-  border:none;
-  cursor: pointer;
-  line-height: 1em;
-  background-color:var(--blue);
-  padding: 0.7em;
-  font-weight: bold;
-  color:var(--white);
-  border-radius: 0.3em;
-  box-shadow: 1px 3px 5px #333;
+ border:0; 
+ border-radius: 4px;
+ overflow:hidden;
+ margin-right: 0.4em;
 }
+#frame {
+  width:100%;
+  height: 900px;
+}
+#sandboxtext{
+  align-items: center;
+  vertical-align: super;
+  padding: 0.3en;
+  position: relative;
+  top: -0.2em;
+}
+
 
 .codesvg{
   height: 1em;
@@ -105,9 +117,7 @@ a[href]:visited {
 main {
   padding: 1rem;
   float: left;
-  height:100%;
   width:100%;
-  float: left;
 }
 .docsH1{
   text-align: center;
@@ -374,4 +384,49 @@ a[href].direct-link:focus:visited,
 .example{
   width:96%;height: 100%;
   margin: 0 auto;
+
+}
+
+/* This is for Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 5px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -10px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 3px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -6px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+.bounce {
+animation: bounce 0.75s ;
+-webkit-animation: bounce 0.75s ;
+}
+.bounce:hover{
+  cursor: pointer;
+  color: #902f2f;
 }

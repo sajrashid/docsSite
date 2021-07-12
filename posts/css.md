@@ -11,8 +11,7 @@ layout: layouts/doc.njk
 sortName: CSS
 ---
 
-Outputs a semantically correct, css agnostic HTML  table.
-Works with any standard table css.
+react-dj-table uutputs a semantically correct, css agnostic HTML table. CSS abstraction provides flexiblity and tables are easy to style.
 
 <sub>standard css example, see the second example in basics.</sub>
 
@@ -29,6 +28,7 @@ Utility type css frameworks, like Tailwind, add  styles to HTML elements.
    }
 
 ```
+<sub>TODO add tailwind groups to child pager elements</sub>
 
 https://codesandbox.io/s/testing-forked-meysj
 

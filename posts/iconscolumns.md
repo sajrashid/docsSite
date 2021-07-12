@@ -22,4 +22,3 @@ layout: layouts/doc.njk
 ```html
   <Table json={json} options={options} />
 ```
-k

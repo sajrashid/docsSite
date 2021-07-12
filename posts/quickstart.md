@@ -23,7 +23,7 @@ order: 1
 ```
 The table expects an array of JSON objects, nothing special just regular tabular json.
 
-<sub>Id columns are not required</sub>
+<sub>Id columns are not required, **although strongly advised**</sub>
 
 ### Provide Data
  ```js

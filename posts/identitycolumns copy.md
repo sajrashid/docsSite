@@ -8,9 +8,11 @@ tags:
 layout: layouts/doc.njk
 ---
 ## NOTE
-Although identity columns are not required, where there is non uniquedata underdesiable behaviour may be caused, row selection will cause duplicate rows to be selected for example. Specifiying a identity column will also help with performance.
+Although identity columns are not required, where there is non duplicate data, undesiable behaviour may be caused. For example row selection will cause duplicate rows to be selected. **It is strongly advised to include an identity column**.
 
-<code>Where possible identity columns should be an numerical json type.</code>
+The first column [0] is assumed to be the identity column unless specified using **idCol**.
+
+<code>Where possible identity columns should be a numerical json type.</code>
 
 ### Identity Column options
 
