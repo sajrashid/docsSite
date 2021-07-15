@@ -1,13 +1,46 @@
 /* Colors */
 :root {
+  --text-color: #17050F;
+  /* White Smoke */
+  --body-bg: #f5f5f5;
+  /* lime */
+  --accent-bg: #32cd32;
+  --border: #333;
+  /* blue */
+  --blockquote: #082840;
+  /* navy */
+  --linkText: #17050F;
+
+  --body-bg-200: #ccc;
+  --btn-seconday:#0096c3;
   --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
-  --darkgray: #333;
-  --navy: #17050F;
-  --blue: #082840;
-  --white: #fff;
-  --lime: #32cd32;
+  --filter:invert(0);
 }
+
+.dark_mode{
+  --body-bg: #252525;
+  --border: #ccc;
+  /* blue */
+  --blockquote: #b9d0e2;
+  /* navy */
+  --linkText: #e9e9e9;
+  --text-color:#f5f5f5;
+  --body-bg-200: #333;
+  --btn-seconday:#03485e;
+  --filter:invert(1);
+}
+#theme_toggler{
+  position: absolute;
+  right: 5%;
+  background: var(--btn-seconday);
+  padding: 0.3em;
+  border-radius:0.5em;
+  color: var(--linkText);
+  cursor: pointer;
+  top:1em;
+  right:5em;
+}
+
 #root{width:100%;height: 100%;}
 /* Global stylesheet */
 * {
@@ -24,16 +57,23 @@ body{
   padding: 0;
   margin: 0;
   font-family: -apple-system, system-ui, sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  color: var(--text-color);
+  background-color: var(--body-bg);
   width:100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+.dark_mode{
+  --body-bg: #252525;
+  --card-bg: #555;
+  --card-bd-col: #212121;
+  --text-color:#f5f5f5;
+}
+
 .home a {
   color:black!important;
-  background-color:var(--lime);
+  background-color:var(--accent-bg);
   padding:0.1em 0.6em 0.1em 0.6em;
   border-radius: 0.3em;
 }
@@ -53,6 +93,7 @@ body{
   height: 3em;
   min-height: 3em;
   min-width: 3em;
+  filter:var(--filter)
 }
 .npm{
   max-height: 2em;
@@ -75,13 +116,7 @@ body{
   width: 98.5%;
   height: 930px;
 }
-#sandboxtext{
-  align-items: center;
-  vertical-align: super;
-  padding: 0.3en;
-  position: relative;
-  top: -0.2em;
-}
+
 
 
 .codesvg{
@@ -92,9 +127,9 @@ body{
 }
 blockquote{
   font-size: 1.8em;
-  border-left: 8px solid #333;
+  border-left: 8px solid var(--border);
   padding-left: 1em;
-  color: var(--blue);
+  color: var(--blockquote);
 }
 p:last-child {
   margin-bottom: 0;
@@ -109,10 +144,10 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--blockquote);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--linkText);
 }
 main {
   padding: 1rem;
@@ -152,7 +187,7 @@ main :first-child {
 
 
 .side >ul>li>a:hover{
-  border-bottom: solid 1px var(--lime);
+  border-bottom: solid 1px var(--accent-bg);
 }
 
 .docwrapper{
@@ -206,23 +241,7 @@ code {
   line-height: 1.5;
 }
 pre {
-  font-size: 14px;
-  line-height: 1.375;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  padding: 1em;
-  margin: .5em 0;
-  background-color: #f6f6f6;
+  box-shadow: 2px 3px 5px var(--body-bg-200);
 }
 code {
   word-break: break-all;
@@ -338,11 +357,13 @@ code::before {
   position: relative;
   float: right;
   right: 1em;
-  background-color: #ccc;
+  background-color: var(--body-bg-200);
   border-radius: 0.4em;
   width:2em;
   min-height: 2.2em;
 }
+
+
 .flash {
   transition: 0.2s;
   box-shadow: 0px 0px 0px blue;
@@ -363,7 +384,7 @@ code::before {
   padding: 0.09090909090909em 0.3636363636364em; /* 1px 4px /11 */
   margin-left: 0.8em; /* 8px /10 */
   color: var(--darkgray);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--text-color);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
   line-height: 1.8;
@@ -374,7 +395,7 @@ a[href].doc-tag:visited {
 }
 a[href].doc-tag:hover,
 a[href].doc-tag:focus {
-  background-color: var(--lightgray);
+  background-color: var(--body-bg-200);
 }
 .doclist-item > .doc-tag {
   align-self: center;
@@ -457,4 +478,10 @@ left: 1em;
 .bounce:hover{
   cursor: pointer;
   color: #902f2f;
+}
+#sandboxtext{
+  align-items: center;
+  vertical-align: text-top;
+  position: relative;
+  left: 1.2em;
 }
