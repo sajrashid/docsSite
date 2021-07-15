@@ -63,6 +63,8 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.05s;
 }
 .dark_mode{
   --body-bg: #252525;
