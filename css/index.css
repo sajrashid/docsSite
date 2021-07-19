@@ -487,3 +487,7 @@ left: 1em;
   position: relative;
   left: 1.2em;
 }
+
+.utterancesDiv{
+  border: solid 3px red;;
+}
