@@ -9,13 +9,14 @@ layout: layouts/doc.njk
 ---
 # Editing 
 
-## Not released in development, release due 14/07/2021
+## Now released
 
 <sub>Editing works without an id. The table will use the first columns values as an identity, duplicates will cause conflicts!</sub>
 
 <sub>Ensure your first column is unique, you can always specify an id column via options</sub> **"idCol":"colname"** <sub>, recomended if your first column is not an identity type.</sub> 
 
 ### Edit example
+
  ```js
    const options = {
    editable: "true",
@@ -24,6 +25,60 @@ layout: layouts/doc.njk
 
 ```
 
+```js
+  const handleRowClick = (row, oldRowData, action, dispatch) => {
+        mydispatch = dispatch
+        
+        if (action === 'SELECT') {
+            console.log(action,row)
+         // informational
+         // returns row
+        
+        }
+        if (action === 'VALIDATE') {
+            console.log("VALIDATE")
+            // old data what do you want to do
+            // user has not clicked the update button 
+            // and they have attempted to move to a different row
+            // warn user they will loose the changes and to accept or reject
+            setUserMessage('Warning: you have not saved your changes, click OK to go back, then click update to save your changes! Click Undo to undo your changes.')
+            setMsgClassName('msgDiv warning msgDivShow')
+            //dispatch({ type: ACTIONS.REJECTCHANGES})
+        }
+        if (action === "UPDATE") {
+            console.log(action,row,oldRowData)
+            // put or post data to DB or confirm changes, with the user 
+            dispatch({ type: ACTIONS.CONFIRMUPDATE})  
+             // save to DB
+             // incase of failure call rejectchanges
+        }
+
+        if (action === "CREATE"){
+            // informational 
+            // user has clicked create
+            console.log(action)
+            // no confirm action is needed as it's a temp UI change 
+            // action will be triggered next is insert unless users decides to cancel
+           
+        }
+        if (action === "DELETE"){
+            console.log(action)
+            // delete from DB, once confirmed delete from table JSON
+            // no need to refresh your data
+            dispatch({ type: ACTIONS.CONFIRMDELETE})  
+        }
+        if (action === "INSERT"){
+            console.log(action,row)
+            // insert DB, once confirmed  from DB confirm
+            // incase of failure call rejectchanges
+            // no need to refresh your data
+            dispatch({ type: ACTIONS.CONFIRMINSERT})  
+        }
+    }
+
+```
+
+full example in repo pages/advanced
 TODO codesandbox
 
 
