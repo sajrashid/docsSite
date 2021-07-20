@@ -77,9 +77,10 @@ layout: layouts/doc.njk
     }
 
 ```
+Embedded sandbox see [Home Page](https://react-dj-table.netlify.app/) or open [here](https://codesandbox.io/s/full-example-sematic-ui-pageable-searchable-v151w?from-embed=&file=/index.js)
 
-full example in repo pages/advanced
-TODO codesandbox
+
+TODO more edit examples
 
 
 
