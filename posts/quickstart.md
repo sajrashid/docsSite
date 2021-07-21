@@ -38,7 +38,7 @@ The table expects an array of JSON objects, nothing special just regular tabular
    <Table json={json} />
 ```
 
-https://codesandbox.io/s/mystifying-diffie-qgrpp
+https://codesandbox.io/s/bac-72cu9
 
 ### Add Options
 <sub>Options are not mandatory.</sub>
@@ -55,4 +55,4 @@ https://codesandbox.io/s/mystifying-diffie-qgrpp
     <Table json={json} options={options} />
 ```
 
-https://codesandbox.io/s/crazy-lehmann-nt9e5
+https://codesandbox.io/s/bac-forked-vuk8l?file=/index.js
