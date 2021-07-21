@@ -4,7 +4,9 @@ description: intallation & simple examples
 date: 2021-06-06T00:00:00+00:00
 tags:
   - Edit
-  - Editbale
+  - CRUD
+  - Editable
+  - ReadOnly
 layout: layouts/doc.njk
 ---
 # Editing 
@@ -20,6 +22,7 @@ layout: layouts/doc.njk
  ```js
    const options = {
    editable: "true",
+   readOnly:['Avatar'] // specify read-only edit cell
     ....
    }
 
