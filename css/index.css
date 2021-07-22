@@ -211,7 +211,7 @@ main :first-child {
 }
 .docspager{
   float: right;
-  width:80%;
+  width:100%;
   padding-left: 1em;
 }
 header {
@@ -489,5 +489,21 @@ left: 1em;
 }
 
 .utterancesDiv{
-  border: solid 3px red;;
+  background-color: #333;
+    border-radius: 0.3em;
+    margin-bottom: 2em;
+}
+.utterances{
+  height: 170px;
+  width: 100%;
+  max-width: 98%;
+}
+
+.bouncebtn{
+background-color: steelblue;
+height: 3em;
+color:#ededed;
+width:10em;
+box-shadow: 1px 2px 3px #333;
+border-radius: 0.3em;
 }
