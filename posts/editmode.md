@@ -13,7 +13,7 @@ layout: layouts/doc.njk
 
 ## Now released
 
-### update to v 1.1.2 contains bugfix for setting id on post.
+### NOTE: update to v 1.1.3 contains bugfix for setting id on post.
 
 <sub>Editing works without an id. The table will use the first columns values as an identity, duplicates will cause conflicts!</sub>
 
