@@ -13,6 +13,8 @@ layout: layouts/doc.njk
 
 ## Now released
 
+### update to v 1.1.2 contains bugfix for setting id on post.
+
 <sub>Editing works without an id. The table will use the first columns values as an identity, duplicates will cause conflicts!</sub>
 
 <sub>Ensure your first column is unique, you can always specify an id column via options</sub> **"idCol":"colname"** <sub>, recomended if your first column is not an identity type.</sub> 
@@ -70,12 +72,12 @@ layout: layouts/doc.njk
             // no need to refresh your data
             dispatch({ type: ACTIONS.CONFIRMDELETE})  
         }
-        if (action === "INSERT"){
+         if (action === "INSERT"){
             console.log(action,row)
             // insert DB, once confirmed  from DB confirm
             // incase of failure call rejectchanges
             // no need to refresh your data
-            dispatch({ type: ACTIONS.CONFIRMINSERT})  
+            dispatch({ type: ACTIONS.CONFIRMINSERT, payload: { id: 29 } })
         }
     }
 
